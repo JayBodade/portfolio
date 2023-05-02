@@ -51,7 +51,7 @@
   height: 100%;
   background-image: url("./Images/602575.png");
   background-size: 100% 100%;
-  animation: changeImage  20s linear  infinite  ;
+  animation: changeImage  20s linear 4s  infinite  ;
  }
 
  @keyframes changeImage {
