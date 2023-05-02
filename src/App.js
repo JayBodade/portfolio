@@ -379,7 +379,7 @@ function App() {
            
           </div>
           <div id="right-sidecontainer" className='rightside-container   w-full overflow-y-scroll ' style={{ width: '', height: '800px', scrollBehavior: 'smooth' }} >
-            <div className='w-96  shadow-sm ' style={{ width: '900px' }}>
+            <div className='rightcont w-96  shadow-sm ' style={{ width: '900px' }}>
               <div id="home" className='rightside-first-container bg-cyan -mt-9 w-full  ' style={{ height: '786px' }}>
                 <div  id="home-image " alt="" className=' home-image shadow-2xl' style={{ width: '101%', height: '100%', opacity: '0.87' }} ></div>
                 <div className='heading-name-container  animate-on-scroll  -mt-14 w-100 h-fit   ' >

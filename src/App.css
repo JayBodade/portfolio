@@ -47,10 +47,10 @@
 
  .home-image{
 
-  width: 100%;
-  height: 100%;
+ 
   background-image: url("./Images/602575.png");
   background-size: 100% 100%;
+  background-repeat: no-repeat;
   animation: changeImage  20s linear 4s  infinite  ;
  }
 
@@ -172,25 +172,35 @@ html{
   color: white;
 }
 
-@media screen and (max-width: 320px) {
+@media only screen and (max-width: 450px) {
  
 
   .leftside-container{
     display: none;
   }
 
+  .rightcont{
+    width: 440px !important;
+  }
+
   .rightside-container{
     margin-left:0px;
     height: 20px;
+    width: 440px;
+  }
+
+  .project-description-container{
+    width: 400px;
+    margin-top: 40px;
   }
 
    .rightside-first-container{
-    width: 46%;
+    width: 450px;
     height: 20px;
    }
 
    .heading-name-container{
-    width: 24%;
+    width: 60%;
     height:fit-content;
 
 
@@ -205,7 +215,7 @@ html{
    }
 
    .right-side-second-container{
-    width: 30%;
+    width: 440px;
     margin-bottom: 100%;
    }
   
@@ -226,8 +236,8 @@ html{
    }
 
    .rigth-side-third-container{
-    width: 30%;
-    margin-top: 500px;
+    width: 440px;
+    margin-top: 300px;
    }
 
    .rigth-side-education-section{
@@ -236,17 +246,17 @@ html{
    }
    
    .education-row-content{
-    width: 100%;
+    width: 94%;
     font-size: 14px;
     height: 120px;
-    margin-left: 20px;
+    margin-left: 10px;
    }
 
    .skill-row-content{
-    width: 100%;
+    width: 94%;
     font-size: 14px;
     height: 70px;
-    margin-left: 20px;
+    margin-left: 10px;
 
    }
 
@@ -313,7 +323,7 @@ html{
   }
 
   .maincontainer{
-    width: fit-content;
+    width:100%;
   }
 
   
@@ -326,18 +336,31 @@ html{
 
   #project-extent-container-smp{
     width: fit-content;
-    margin-left: -88.6%;
-    width:310px ;
+    margin-left: -60%;  
+    width:400px ;
+ 
+    height: fit-content; 
+  
+   
     border: 2px solid black;
+    padding-left: 2px;
+    padding-right: 2px;
   
     
   }
 
   #project-extent-container-chat{
     width: fit-content;
-    margin-left: -88.6%;
-    width:310px ;
+    margin-left: -60%;  
+    width:400px ;
+ 
+    height: fit-content; 
+  
+   
     border: 2px solid black;
+    padding-left: 2px;
+    padding-right: 2px;
+  
 
   }
 
@@ -345,12 +368,16 @@ html{
   
 #project-extent-container-ecom{
 
-    width: fit-content;
-    margin-left: -88.6%;
-    width:310px ; 
-  
-   
-    border: 2px solid black;
+  width: fit-content;
+  margin-left: -60%;  
+  width:400px ;
+
+  height: fit-content; 
+
+ 
+  border: 2px solid black;
+  padding-left: 2px;
+  padding-right: 2px;
   }
 
 
@@ -367,10 +394,7 @@ html{
     content-visibility: auto;
 
   }
-  
-  .rightside-container{
-   width:100%;
-  }
+
 
   .dropdown-skill-container-framework{
     display: flex;
@@ -386,7 +410,7 @@ html{
 
   .project-container{
     
-    width:310px;
+    width:450px;
     
   }
 
@@ -397,7 +421,9 @@ html{
 
   .contact-container{
 
-    width:310px;
+    width:430px;
+    padding-left: 6px;
+    padding-right: 6px;
    
     
 
@@ -429,9 +455,9 @@ html{
 
   .smp-project-images{
 
-   
+    margin-left: 10px;
     background-image: url("Images/AdminLogin.png");
-   background-size: 100% 40% !important;
+   background-size: 100% 400px !important;
    background-repeat: no-repeat;
     animation: changesmpImages 20s  linear 2s infinite  ;
   }
@@ -439,38 +465,36 @@ html{
  
   .ecom-project-images{
 
-   
+    margin-left: 10px;
     background-image: url("Images/Screenshot\ \(129\).png");
-    background-size: 100% 40% !important;
+    background-size: 100% 400px !important;
     animation: changeecomImages 20s  linear 2s infinite  ;
     background-repeat: no-repeat;
   }
 
   .project-Images-container-smp{
-    width: 250px;
-    height: 200px;
+    width:380px;
+    height: 400px;
   }
 
   .project-Images-container-ecom{
-    width: 250px;
-    height: 200px;
-
+    width:380px;
+    height: 400px;
   }
 
 
   .project-Images-container-chat{
-    width: 250px;
-    height: 200px;
-
+    width:380px;
+    height: 400px;
     
 
 
   }
   .chat-project-images{
 
-    
+    margin-left: 10px;
     background-image: url("Images/Screenshot\ \(130\).png");
-    background-size: 100% 40% !important;
+    background-size: 100% 400px !important;
     animation: changechatImages 20s  linear 2s infinite  ;
     background-repeat: no-repeat;
   }
@@ -480,23 +504,27 @@ html{
   #project-extent-container-note{
 
     width: fit-content;
-    margin-left: -88.6%;
-    width:310px ; 
+    margin-left: -60%;  
+    width:400px ;
+  
+    height: fit-content; 
   
    
     border: 2px solid black;
+    padding-left: 2px;
+    padding-right: 2px;
   }
 
   .project-Images-container-notes {
-    width: 250px;
-    height: 200px;
+    width:380px;
+    height: 400px;
 
   }
 
   .note-project-Images{
-    
+    margin-left: 10px;
     background-image: url("Images/Screenshot\ \(131\).png");
-    background-size:  100% 40% !important;
+    background-size:  100% 400px !important;
     animation: changenotesImages 20s  linear 2s infinite  ;
     background-repeat: no-repeat;
   
@@ -516,7 +544,7 @@ html{
 .smp-project-images{
   width: 100%;
   height: 500px;
- 
+  background-repeat: no-repeat;
   background-size: 100% 100%;
   animation: changesmpImages 20s  linear 2s infinite  ;
 }
@@ -530,7 +558,7 @@ html{
 
   width: 100%;
   height: 500px;
- 
+ background-repeat: no-repeat;
   background-size: 100% 100%;
   animation: changeecomImages 20s  linear 2s infinite  ;
 }
@@ -596,7 +624,7 @@ html{
 
   width: 100%;
   height: 500px;
- 
+  background-repeat: no-repeat;
   background-size: 100% 100%;
   animation: changechatImages 20s  linear 2s infinite  ;
 }
@@ -636,7 +664,7 @@ html{
 .note-project-Images{
   width: 100%;
   height: 500px;
- 
+  background-repeat: no-repeat;
   background-size: 100% 100%;
   animation: changenotesImages 20s  linear 2s infinite  ;
 
