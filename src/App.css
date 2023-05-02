@@ -516,7 +516,7 @@ html{
 .smp-project-images{
   width: 100%;
   height: 500px;
-  background-image: url("Images/AdminLogin.png");
+ 
   background-size: 100% 100%;
   animation: changesmpImages 20s  linear 2s infinite  ;
 }
@@ -530,7 +530,7 @@ html{
 
   width: 100%;
   height: 500px;
-  background-image: url("Images/Screenshot\ \(129\).png");
+ 
   background-size: 100% 100%;
   animation: changeecomImages 20s  linear 2s infinite  ;
 }
@@ -540,6 +540,9 @@ html{
 }
 
 @keyframes changeecomImages {
+  0%{
+    background-image: url("Images/Screenshot\ \(129\).png");
+  }
  
   25%{
     background-image: url("Images/Screenshot\ \(157\).png");
@@ -561,6 +564,10 @@ html{
 
 
 @keyframes changesmpImages {
+  0%{
+    background-image: url("Images/AdminLogin.png");
+
+  }
 
  
   25%{
@@ -589,7 +596,7 @@ html{
 
   width: 100%;
   height: 500px;
-  background-image: url("Images/Screenshot\ \(130\).png");
+ 
   background-size: 100% 100%;
   animation: changechatImages 20s  linear 2s infinite  ;
 }
@@ -599,6 +606,10 @@ html{
 }
 
 @keyframes changechatImages {
+  0%{
+
+    background-image: url("Images/Screenshot\ \(130\).png");
+  }
 
   25%{
     background-image: url("Images/Screenshot\ \(168\).png");
@@ -625,7 +636,7 @@ html{
 .note-project-Images{
   width: 100%;
   height: 500px;
-  background-image: url("Images/Screenshot\ \(131\).png");
+ 
   background-size: 100% 100%;
   animation: changenotesImages 20s  linear 2s infinite  ;
 
@@ -638,7 +649,9 @@ html{
 
 @keyframes changenotesImages {
 
- 
+ 0%{
+  background-image: url("Images/Screenshot\ \(131\).png");
+ }
   33%{
     background-image: url("Images/Screenshot\ \(153\).png");
  
