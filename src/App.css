@@ -57,10 +57,10 @@
  @keyframes changeImage {
   
  
-  25%{
+  50%{
     background-image: url("./Images/552426.jpg");
   }
-  50%{
+  100%{
     background-image:url("./Images/737474.png");
   }
  
