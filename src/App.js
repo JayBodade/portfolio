@@ -341,7 +341,7 @@ function App() {
       <div className="App
       
       ">
-        <div className='w-full h-fit border fixed flex' >
+        <div className='maincontainer w-full h-fit border fixed flex' >
           <div className=' leftside-container w-72 ml-48 h-fit  border-gray-700' style={{ backgroundColor: "rgb(242, 243, 247)", height: '800px' }}>
             <div className='profile-container w-full mt-14 h-fit justify-center text-center'>
               <div className='image container'>
@@ -526,7 +526,7 @@ function App() {
                         </div>
                         <div className='skill-dropdown-container  ml-4 w-52'>
                           <div className='m-auto  w-1/2 py-3 mt-1 justify-center text-center'>
-                            <button > <h3 className='hover:cursor-pointer '  ><i className={languageClick ? "fa fa-angle-down" : "fa fa-angle-up"} onClick={dropdownLanguage}></i></h3></button>
+                            <button  className='button-drop-down'> <h3 className='hover:cursor-pointer '  ><i className={languageClick ? "fa fa-angle-down" : "fa fa-angle-up"} onClick={dropdownLanguage}></i></h3></button>
                           </div>
                         </div>
                       </div>
@@ -552,12 +552,12 @@ function App() {
                         </div>
                         <div className='skill-dropdown-container  ml-4 w-52'>
                           <div className='m-auto  w-1/2 py-3 mt-1 justify-center text-center'>
-                            <button > <h3 className='hover:cursor-pointer '  ><i className={frameworkClick ? "fa fa-angle-down" : "fa fa-angle-up"} onClick={dropdownFrameworks} ></i></h3></button>
+                            <button className='button-drop-down' > <h3 className='hover:cursor-pointer '  ><i className={frameworkClick ? "fa fa-angle-down" : "fa fa-angle-up"} onClick={dropdownFrameworks} ></i></h3></button>
                           </div>
                         </div>
                       </div>
                       <div id='frameworkdropdowm' className="dropdown-framework-container sizeContaine ml-2 border border-gray-300">
-                        <div className=' dropdown-skill-container flex w-full h-full '>
+                        <div id="dropdown-framework-container" className=' dropdown-skill-container-framework flex w-full h-full '>
                           <div className='flex w-full ml-3 m-auto '> <img src={reactImage} alt="" width={'35px'} height={'35px'} /> <h1 className=''>React</h1></div>
                           <div className='flex w-full ml-3 m-auto'> <img src={expressImage} alt="" width={'35px'} height={'35px'} /> <h1 className='mt-1'>Express JS</h1></div>
                           <div className='flex w-full ml-3 m-auto'> <img src={nodeImage} alt="" width={'35px'} height={'35px'} /> <h1 className='mt-1'>Node JS</h1></div>
@@ -577,12 +577,12 @@ function App() {
                         </div>
                         <div className='skill-dropdown-container  ml-4 w-52'>
                           <div className='m-auto  w-1/2 py-3 mt-1 justify-center text-center'>
-                            <button > <h3 className='hover:cursor-pointer '  ><i className={softwareClick ? "fa fa-angle-down" : "fa fa-angle-up"} onClick={dropdown}></i></h3></button>
+                            <button  className='button-drop-down'> <h3 className='hover:cursor-pointer '  ><i className={softwareClick ? "fa fa-angle-down" : "fa fa-angle-up"} onClick={dropdown}></i></h3></button>
                           </div>
                         </div>
                       </div>
                       <div id='softwaredropdown' className="dropdown-software-container sizeContaine ml-2 border border-gray-300">
-                        <div className='dropdown-skill-container flex  w-full h-full'>
+                        <div className='dropdown-skill-container-software flex  w-full h-full'>
                           <div className='m-auto w-full flex ml-2'><img src={vsImage} alt="" width={'30px'} height={'30px'} /><h1 className=''>Visual Studio Code</h1></div>
                           <div className='m-auto w-full flex ml-2'><img src={eclipseImage} alt="" width={'30px'} height={'30px'} /> <h1 className=''>Eclipse</h1></div>
 
@@ -707,8 +707,8 @@ function App() {
     <div className="close-container m-auto"><i className='fa fa-close hover:cursor-pointer' onClick={closeProjectContainer}></i></div>
    </div>
    <div className='projectContainer w-full h-fit hover:cursor-pointer'> 
-   <div className='project-Images-container m-auto shadow-lg w-full h-fit '>
-        <div className='smp-project-images' alt="" width={'100%'} ></div>
+   <div className='project-Images-container-smp m-auto shadow-lg w-full h-fit '>
+        <div className='smp-project-images' alt=""  ></div>
    </div>
    <div className='project-description-container w-full text-center justify-center h-fit px-4 py-4 '>
      <p> It is a full fledged website in which a user can send request/complaint to a particular department like water department , light department ... etc which are added by admin and after completing the request / complaint of the user it get its response through email from that particluar department which user have send a request.</p>
@@ -725,7 +725,7 @@ function App() {
     <div className="close-container m-auto"><i className='fa fa-close hover:cursor-pointer' onClick={closeEcommerceContainer}></i></div>
    </div>
    <div className='projectContainer w-full h-fit'> 
-   <div className='project-Images-container m-auto  shadow-lg w-full h-fit '>
+   <div className='project-Images-container-ecom m-auto  shadow-lg w-full h-fit '>
         <div className='ecom-project-images' alt="" width={'100%'} ></div>
    </div>
    <div className='project-description-container w-full text-center justify-center h-fit px-4 py-4'>
@@ -743,7 +743,7 @@ product and can also add it to cart.</p>
     <div className="close-container m-auto"><i className='fa fa-close hover:cursor-pointer' onClick={closeChatContainer}></i></div>
    </div>
    <div className='projectContainer w-full h-fit'> 
-   <div className='project-Images-container m-auto  shadow-lg w-full h-fit '>
+   <div className='project-Images-container-chat m-auto  shadow-lg w-full h-fit '>
    <div className='chat-project-images' alt="" width={'100%'} ></div>
    </div>
    <div className='project-description-container w-full text-center justify-center h-fit px-4 py-4 '>
@@ -760,7 +760,7 @@ product and can also add it to cart.</p>
     <div className="close-container m-auto"><i className='fa fa-close hover:cursor-pointer' onClick={closeNoteContainer}></i></div>
    </div>
    <div className='projectContainer w-full h-fit'> 
-   <div className='project-Images-container shadow-lg  m-auto w-full h-fit '>
+   <div className='project-Images-container-notes shadow-lg  m-auto w-full h-fit '>
        <div className='note-project-Images'alt="" width={'100%'} ></div>
    </div>
    <div className='project-description-container w-full text-center justify-center h-fit px-4 py-4'>

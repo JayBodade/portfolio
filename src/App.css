@@ -63,12 +63,7 @@
   50%{
     background-image:url("./Images/737474.png");
   }
-  75%{
-    background-image: url("./Images/935165.jpg");
-  }
-  100%{
-    background-image: url("./Images/774072.jpg");
-  }
+ 
   
  }
 .sizeContaine{
@@ -294,11 +289,226 @@ html{
     visibility: visible;
   
    width: 54rem;
-   height:60px;
+   height:fit-content;
   content-visibility: auto;
    
   
   }
+
+  .dropdown-framework-container{
+    
+    width: 100%;
+    margin-left: 7.7%;
+   
+   
+  
+
+  }
+
+  .show-framework{
+   
+    visibility: visible;
+    height: 280px;
+    content-visibility: auto;
+  }
+
+  .maincontainer{
+    width: fit-content;
+  }
+
+  
+  .dropdown-software-container{
+  
+    width: 100%;
+    margin-left: 20px;
+   
+  }
+
+  #project-extent-container-smp{
+    width: fit-content;
+    margin-left: -88.6%;
+    width:310px ;
+    border: 2px solid black;
+  
+    
+  }
+
+  #project-extent-container-chat{
+    width: fit-content;
+    margin-left: -88.6%;
+    width:310px ;
+    border: 2px solid black;
+
+  }
+
+
+  
+#project-extent-container-ecom{
+
+    width: fit-content;
+    margin-left: -88.6%;
+    width:310px ; 
+  
+   
+    border: 2px solid black;
+  }
+
+
+  .smp-project-images{
+    width: 10px;
+    height: 20px;
+  }
+
+
+  .show-software{
+    display: block;
+    visibility: visible;
+    height: 90px;
+    content-visibility: auto;
+
+  }
+  
+  .rightside-container{
+   width:100%;
+  }
+
+  .dropdown-skill-container-framework{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .dropdown-skill-container-software{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .project-container{
+    
+    width:310px;
+    
+  }
+
+  .right-side-blog-section{
+    width: 99%;
+    margin-left: 3px;
+  }
+
+  .contact-container{
+
+    width:310px;
+   
+    
+
+  }
+
+  .button-drop-down{
+    margin-top: 3px;
+  }
+
+  .right-side-form-container{
+    
+    width: 100%;
+  }
+
+  .form-container{
+    width: 100%;
+    margin-left: 3.5px;
+  }
+
+  .projectContainer{
+    width: 300px;
+   
+  }
+
+  .project-Images-container{
+    width: 100%;
+    height:fit-content;
+  }
+
+  .smp-project-images{
+
+   
+    background-image: url("Images/AdminLogin.png");
+   background-size: 100% 40% !important;
+   background-repeat: no-repeat;
+    animation: changesmpImages 20s  linear 2s infinite  ;
+  }
+
+ 
+  .ecom-project-images{
+
+   
+    background-image: url("Images/Screenshot\ \(129\).png");
+    background-size: 100% 40% !important;
+    animation: changeecomImages 20s  linear 2s infinite  ;
+    background-repeat: no-repeat;
+  }
+
+  .project-Images-container-smp{
+    width: 250px;
+    height: 200px;
+  }
+
+  .project-Images-container-ecom{
+    width: 250px;
+    height: 200px;
+
+  }
+
+
+  .project-Images-container-chat{
+    width: 250px;
+    height: 200px;
+
+    
+
+
+  }
+  .chat-project-images{
+
+    
+    background-image: url("Images/Screenshot\ \(130\).png");
+    background-size: 100% 40% !important;
+    animation: changechatImages 20s  linear 2s infinite  ;
+    background-repeat: no-repeat;
+  }
+
+ 
+
+  #project-extent-container-note{
+
+    width: fit-content;
+    margin-left: -88.6%;
+    width:310px ; 
+  
+   
+    border: 2px solid black;
+  }
+
+  .project-Images-container-notes {
+    width: 250px;
+    height: 200px;
+
+  }
+
+  .note-project-Images{
+    
+    background-image: url("Images/Screenshot\ \(131\).png");
+    background-size:  100% 40% !important;
+    animation: changenotesImages 20s  linear 2s infinite  ;
+    background-repeat: no-repeat;
+  
+  }
+
+
+  
+
+ 
+
+
+
   
 }
 
