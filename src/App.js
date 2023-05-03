@@ -280,7 +280,7 @@ function App() {
       },
       to:[{email:mail}],
       subject:subject,
-      htmlContent:`<div className="font-mono" > ${Message}</div>`,
+      htmlContent:`<html><body><h1>${Message}</h1></body></html>`,
       
     };
 
@@ -298,9 +298,10 @@ function App() {
     })
 
     const result = await response.json();
-    console.log(mailRef)
+ 
     if(mailRef){
       mailRef.current.classList.remove('hidden');
+      console.log(result)
       if(result.messageId){
     
      
@@ -771,11 +772,11 @@ product and can also add it to cart.</p>
    </div>
    </div>
 </div>  
-<div id='mail-pop-up' ref={mailRef} className='mail-sent-pop-up absolute h-10 w-1/2 left-96 ml-6 mt-3 hidden bg-gray-200 shadow-2xl rounded-md' style={{boxShadow:'1px 1px 2px '}} >
+<div id='mail-pop-up' ref={mailRef} className='mail-sent-pop-up absolute hidden h-10 w-1/2 left-96 ml-6 mt-3  bg-gray-200 shadow-2xl rounded-md' style={{boxShadow:'1px 1px 2px '}} >
  <div className="textcontainer flex">
-    <div className='m-auto w-4/5  mt-2 -ml-5'><h3>{mailStatus}</h3></div>
+    <div className='mail-status-text m-auto w-4/5  mt-2 -ml-5'><h3>{mailStatus}</h3></div>
     <div className=' m-auto mt-2'>
-      <i className='fa fa-close hover:cursor-pointer' fontSize={'25px'} onClick={closeMailPopup}></i>
+      <i className='fa fa-close hover:cursor-pointer' fontSize={'28px'} onClick={closeMailPopup}></i>
     </div>
  </div>
 </div>

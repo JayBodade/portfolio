@@ -223,7 +223,7 @@ html{
     width: 375px;
     margin-bottom: 100%;
     margin-left: -15px;
-    margin-top: -70px;
+    margin-top: -90px;
    }
   
 
@@ -242,9 +242,13 @@ html{
    
    }
 
+   .mail-status-text{
+    margin-left: 2px;
+   }
+
    .rigth-side-third-container{
     width: 350px;
-    margin-top: -150px;
+    margin-top: -250px;
    }
 
    .rigth-side-education-section{
@@ -281,6 +285,15 @@ html{
     width: 100%;
     margin-left: 10px;
     height: auto;
+   }
+
+   .mail-sent-pop-up{
+    width: 340px;
+    border: 2px solid black;
+    margin-left: -105%;
+    height: fit-content;
+    padding-bottom: 5px;
+    
    }
 
 
