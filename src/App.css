@@ -223,6 +223,7 @@ html{
     width: 375px;
     margin-bottom: 100%;
     margin-left: -15px;
+    margin-top: -70px;
    }
   
 
@@ -243,7 +244,7 @@ html{
 
    .rigth-side-third-container{
     width: 350px;
-    margin-top: 200px;
+    margin-top: -150px;
    }
 
    .rigth-side-education-section{
@@ -270,7 +271,7 @@ html{
 
    .dropdown-languages-container{
     width: 90%;
-    margin-left: 0px;
+    margin-left: 17px;
    }
 
    .dropdown-skill-container-language{
@@ -315,8 +316,8 @@ html{
 
   .dropdown-framework-container{
     
-    width: 100%;
-    margin-left: 7%;
+    width: 90%;
+    margin-left: 17px;
    
    
   
@@ -341,8 +342,8 @@ html{
   
   .dropdown-software-container{
   
-    width: 100%;
-    margin-left: 20px;
+    width: 90%;
+    margin-left: 17px;
    
   }
 
@@ -430,6 +431,7 @@ html{
     width:350px;
     padding-left: 6px;
     padding-right: 6px;
+    margin-bottom: -10px;
    
     
 
