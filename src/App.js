@@ -378,6 +378,7 @@ function App() {
             </div>
            
           </div>
+          <div className='right-main-container'>
           <div id="right-sidecontainer" className='rightside-container   w-full overflow-y-scroll ' style={{ width: '', height: '800px', scrollBehavior: 'smooth' }} >
             <div className='rightcont w-96  shadow-sm ' style={{ width: '900px' }}>
               <div id="home" className='rightside-first-container bg-cyan -mt-9 w-full  ' style={{ height: '786px' }}>
@@ -779,6 +780,7 @@ product and can also add it to cart.</p>
  </div>
 </div>
 
+      </div>
       </div>
     </>
   );
