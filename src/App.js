@@ -87,12 +87,24 @@ function App() {
   const [senderEmail, setSenderEmai] = useState();
   const [subject, setSubject] = useState();
   const [Message, setMessage] = useState();
+  const [eduElement ,setEduAnimate]=useState(false);
 
   const mailRef = useRef(document.getElementById(''));
 
   const [mailStatus, setMailStatus] = useState('');
+  const [load,setLoad]=useState(false);
+  const [animate, setAnimate] = useState(false);
+  const [skillElement,setskillAnimate]=useState(false);
+  const [projectElement,setProjectAnimate]=useState(false);
+  const [contactElement,setContactAnimate]=useState(false);
 
 
+
+  useEffect(()=>{
+  
+    // return ()=>{ ele.removeEventListener('scroll',handleScroll)}
+
+  },[]);
 
   const dropdown = (event) => {
     setSoftwareClick(!softwareClick);
@@ -379,6 +391,99 @@ function App() {
 
   }
 
+  const ShowAbout = ()=>{
+
+    const ele = document.getElementById('about');
+    ele.classList.add('animate');
+    console.log('in about');
+
+  }
+
+  useEffect(()=>{
+
+    const ele = document.getElementById('right-sidecontainer');
+    const aboutElement = document.getElementById('about');
+    ele.addEventListener('scroll',function(){
+    
+    //  console.log(aboutElement.getBoundingClientRect().bottom < ele.getBoundingClientRect().bottom)
+     if(aboutElement.getBoundingClientRect().bottom - 180 < ele.getBoundingClientRect().bottom ){
+     setAnimate(true);
+     }
+    
+    })
+    
+
+  },[])
+
+
+  useEffect(()=>{
+
+    const ele = document.getElementById('right-sidecontainer');
+    const eduElement = document.getElementById('education');
+    ele.addEventListener('scroll',function(){
+    
+    //  console.log(eduElement.getBoundingClientRect().bottom , ele.getBoundingClientRect().bottom)
+     if(eduElement.getBoundingClientRect().bottom - 600 < ele.getBoundingClientRect().bottom ){
+     setEduAnimate(true);
+     }
+   
+    
+    })
+    
+
+  },[])
+
+  useEffect(()=>{
+
+    const ele = document.getElementById('right-sidecontainer');
+    const skillElement = document.getElementById('skill');
+    ele.addEventListener('scroll',function(){
+    
+    //  console.log(skillElement.getBoundingClientRect().bottom , ele.getBoundingClientRect().bottom)
+     if(skillElement.getBoundingClientRect().bottom  < ele.getBoundingClientRect().bottom ){
+     setskillAnimate(true);
+     }
+   
+    
+    })
+    
+
+  },[])
+
+  useEffect(()=>{
+
+    const ele = document.getElementById('right-sidecontainer');
+    const projectElement = document.getElementById('project');
+    ele.addEventListener('scroll',function(){
+    
+     console.log(projectElement.getBoundingClientRect().bottom , ele.getBoundingClientRect().bottom)
+     if(projectElement.getBoundingClientRect().bottom - 380  < ele.getBoundingClientRect().bottom ){
+     setProjectAnimate(true);
+     }
+   
+    
+    })
+    
+
+  },[])
+
+  useEffect(()=>{
+
+    const ele = document.getElementById('right-sidecontainer');
+    const contacttElement = document.getElementById('contact');
+    ele.addEventListener('scroll',function(){
+    
+     console.log(contacttElement.getBoundingClientRect().bottom , ele.getBoundingClientRect().bottom)
+     if(contacttElement.getBoundingClientRect().bottom - 380  < ele.getBoundingClientRect().bottom ){
+     setContactAnimate(true);
+     }
+   
+    
+    })
+    
+
+  },[])
+
 
   useEffect(() => {
 
@@ -409,9 +514,7 @@ function App() {
     const interval = setInterval(() => {
 
       setEcomIndex(ecomIndex => (ecomIndex + 1) % backgroundImageEcom.length)
-      console.log(backgroundImageEcom[ecomIndex]);
-      console.log(backgroundImageEcom.length);
-      console.log(ecomIndex)
+     
     }, 5000)
 
     return () => clearInterval(interval);
@@ -477,7 +580,7 @@ function App() {
               <nav className='navbar w-full h-fit  justify-center text-center'>
                 <ul className=' font-mono text-sm' style={{ fontSize: '14px' }} >
                   <li className='mt-5 mb-4 hover:cursor-pointer   ' ><a href="#home">HOME</a> </li>
-                  <li className='mt-5 mb-4 hover:cursor-pointer '><a href='#about'>ABOUT</a></li>
+                  <li className='mt-5 mb-4 hover:cursor-pointer ' onClick={ShowAbout}><a href='#about'>ABOUT</a></li>
                   <li className='mt-5 mb-4 hover:cursor-pointer '><a href='#education'>EDUCATION & SKIILS</a></li>
                   {/* <li className='mt-5 mb-4 hover:cursor-pointer '><a href="#blog">BLOG</a> </li> */}
                   <li className='mt-5 mb-4 hover:cursor-pointer '><a href="#project">PROJECTS</a> </li>
@@ -495,13 +598,13 @@ function App() {
             <div id="right-sidecontainer" className='rightside-container   w-full overflow-y-scroll ' style={{ width: '', height: '800px', scrollBehavior: 'smooth' }} >
               <div className='rightcont w-96  shadow-sm ' style={{ width: '900px' }}>
                 <div id="home" className='rightside-first-container bg-cyan -mt-9 w-full  ' style={{ height: '786px' }}>
-                  <div id="home-image " alt="" className=' shadow-2xl' style={{
+                  <div id="home-image " alt="" className=' shadow-2xl'   style={{
                     width: '101%', height: '100%', opacity: '0.87', backgroundImage: `url(${backgroundImagesHome[homeIndex]})`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: '100% 100%',
 
                   }} ></div>
-                  <div className='heading-name-container  animate-on-scroll  -mt-14 w-100 h-fit   ' >
+                   <div className='heading-name-container  animate-on-scroll  -mt-14 w-100 h-fit   ' >
                     <div className="navigator" onClick={showMenu}>
 
                     </div>
@@ -526,8 +629,8 @@ function App() {
                   </div>
                 </div>
                 <div className='right-side-second-container w-full h-fit  ' style={{ height: '780px' }}>
-                  <section id='about' className='right-side-second-section mt-52 '>
-                    <div className='righit-side-second-text w-full h-fit mt-52  x py-24 border-black '>
+                  <section id='about'  className={`right-side-second-section fade-left-to-right ${animate ? 'animate' : ""}  mt-16 `}>
+                    <div className='righit-side-second-text w-full h-fit mt-10  x py-24 border-black '>
                       <div className='text  ml-4 '>
                         <h5>About Us</h5>
                       </div>
@@ -568,13 +671,13 @@ function App() {
                 </div>
 
                 <div className='rigth-side-third-container w-full h-fit mb-52 ' >
-                  <section id='education' className='rigth-side-education-section w-full h-fit  '>
+                  <section id='education' className={`rigth-side-education-section fade-left-to-right ${eduElement?'animate':''} w-full h-fit  `}>
                     <div className='education-heading w-full  px-4 py-3'>
                       <h3  >Education</h3>
 
                     </div>
-                    <div className='education-rows mt-8 opacity-1 visible'>
-                      <div className='education-row-content w-150 h-16 border flex border-white  bg-gray-200 mt-1 mb-1 ml-2'>
+                    <div className='education-rows mt-8 opacity-1 visible '>
+                      <div className={`education-row-content w-150 h-16 border flex border-white  bg-gray-200 mt-1 mb-1 fade-left-to-right ${eduElement?'animate':''} ml-2`}>
                         <div className='education-row-text w-3/4 '>
                           <div className='text w-fit h-fit  px-4 py-5'>
                             <h1>BACHELOR OF TECHNOLOGY IN COMPUTER SCIENCE</h1>
@@ -590,8 +693,8 @@ function App() {
 
                       </div>
                       <div>
-                        <div className='education-row-content w-150 h-16 border flex border-white  bg-gray-200 mt-1 mb-1 ml-2'>
-                          <div className='education-row-text w-3/4 '>
+                       <div className={`education-row-content w-150 h-16 border flex border-white  bg-gray-200 mt-1 mb-1 fade-left-to-right ${eduElement?'animate':''} ml-2`}>
+                        <div className='education-row-text w-3/4 '>
                             <div className='text w-fit h-fit  px-4 py-5'>
                               <h1>HIGHER SECONDARY SCHOOL (12th) </h1>
                             </div>
@@ -603,8 +706,8 @@ function App() {
                           </div>
                         </div>
                       </div>
-                      <div className='education-row-content w-150 h-16 border flex border-white  bg-gray-200 mt-1 mb-1 ml-2'>
-                        <div className='education-row-text w-3/4 '>
+                      <div className={`education-row-content w-150 h-16 border flex border-white  bg-gray-200 mt-1 mb-1 fade-left-to-right ${eduElement?'animate':''} ml-2`}>
+                            <div className='education-row-text w-3/4 '>
                           <div className='text w-fit h-fit  px-4 py-5'>
                             <h1>SECONDARY SCHOOL CERTIFICATE (10th)</h1>
                           </div>
@@ -631,7 +734,7 @@ function App() {
 
                     </div>
 
-                    <div className='skill-heading w-full  px-4 py-3 mt-12'>
+                    <div id="skill" className={`skill-heading w-full  px-4 py-3 mt-12 fade-left-to-right ${skillElement?'animate':''}`}>
                       <h3>Skills</h3>
 
 
@@ -641,7 +744,7 @@ function App() {
                       <div>
 
 
-                        <div id="language" className='skill-row-content w-150 h-16 border flex border-white  bg-gray-200 mt-1 mb-1 ml-2'>
+                        <div id="language" className={`skill-row-content w-150 h-16 border flex border-white  fade-left-to-right ${skillElement?'animate':''} bg-gray-200 mt-1 mb-1 ml-2`}>
                           <div className='skill-row-text w-3/4 '>
                             <div className='text w-fit h-fit  px-4 py-5'>
                               <h1>LANGUAGES</h1>
@@ -667,7 +770,7 @@ function App() {
 
                       </div>
                       <div>
-                        <div id="framework" className='skill-row-content w-150 h-16 border flex border-white  bg-gray-200 mt-1 mb-1 ml-2'>
+                        <div id="framework" className={`skill-row-content w-150 h-16 border flex border-white  fade-left-to-right ${skillElement?'animate':''} bg-gray-200 mt-1 mb-1 ml-2`}>
                           <div className='skill-row-text w-3/4 '>
                             <div className='text w-fit h-fit  px-4 py-5'>
                               <h1>FRAMEWORKS</h1>
@@ -692,7 +795,7 @@ function App() {
                         </div>
                       </div>
                       <div>
-                        <div id='software' className='skill-row-content w-150 h-16 border flex border-white  bg-gray-200 mt-1 mb-1 ml-2'>
+                        <div id='software' className={`skill-row-content w-150 h-16 border flex border-white  fade-left-to-right ${skillElement?'animate':''}  bg-gray-200 mt-1 mb-1 ml-2`}>
                           <div className='skill-row-text w-3/4 '>
                             <div className='text w-fit h-fit  px-4 py-5'>
                               <h1>SOFTWARE</h1>
@@ -743,29 +846,29 @@ function App() {
                   </div>
                 </section>
               </div> */}
-                <div className='project-container w-full h-fit mt-16 mb-16'>
+                <div className={`project-container fade-up ${projectElement ? 'animate':''} w-full h-fit mt-16 mb-16`}>
                   <section id='project' className='right-side-blog-section w-full h-fit'>
                     <div className='project-heading-container w-full h-10 mt-1 py-12  px-4'>
                       <h1 >Project</h1>
                     </div>
                     <div className='right-side-project-row-container flex-wrap flex w-full h-fit  mt-1 mb-32  py-9'>
 
-                      <div className=' smphover project-row w-66  h-fit mt-2 hadow-2xl mb-6  m-auto  '>
+                      <div className={` smphover project-row w-66  fade-up ${projectElement ? 'animate':''}  h-fit mt-2 hadow-2xl mb-6  m-auto  `}>
                         <div className='ecommerce-project w-full h-fit  '>
                           <img src={smpImage} alt="" className=' w-full hover:cursor-pointer ' style={{ height: '200px' }} onClick={SmpDropDown} />
                         </div>
                       </div>
-                      <div className='  project-row w-66  h-fit mt-2 hadow-2xl mb-6  m-auto  '>
+                      <div className={`  project-row w-66  fade-up ${projectElement ? 'animate':''}  h-fit mt-2 hadow-2xl mb-6  m-auto  `}>
                         <div className='ecommerce-project w-full h-fit  '>
                           <img src={ecommerceprojectImage} alt="" className=' w-full hover:cursor-pointer ' style={{ height: '200px' }} onClick={ecomDropDown} />
                         </div>
                       </div>
-                      <div className='project-row w-66  h-fit shadow-2xl  mt-2  mb-6   m-auto  '>
+                      <div className={`project-row w-66  h-fit shadow-2xl  fade-up ${projectElement ? 'animate':''}  mt-2  mb-6   m-auto  `}>
                         <div className='ecommerce-project w-full h-fit   '>
                           <img src={chatImage} alt="" className='w-full hover:cursor-pointer ' style={{ height: '200px' }} onClick={cahtDropDown} />
                         </div>
                       </div>
-                      <div className='project-row w-66 shadow-2xl   h-fit mt-2 mb-6  m-auto  '>
+                      <div className={`project-row w-66 shadow-2xl  fade-up ${projectElement ? 'animate':''}   h-fit mt-2 mb-6  m-auto  `}>
                         <div className='ecommerce-project w-full h-fit '>
                           <img src={inotebookImage} alt="" className='w-full hover:cursor-pointer' style={{ height: '200px' }} onClick={noteDropDown} />
                         </div>
@@ -778,7 +881,7 @@ function App() {
 
 
                 </div>
-                <div className='contact-container w-full h-fit   py-2 mb-20'>
+                <div className={`contact-container w-full h-fit fade-left-to-right  ${contactElement?'animate':''} py-2 mb-20`}>
                   <section id='contact' className='right-side-contact-section w-full h-fit  py-10 '>
                     <div className='heading-contact w-full h-16 mb-4 px-4 py-4 '>
                       <h1>Get In Touch</h1>
@@ -787,22 +890,23 @@ function App() {
 
                     <div className='right-side-form-container mt-16 w-full h-fit'>
                       <div className='form-container w-2/3 h-fit m-auto '>
-                        <form action="">
-                          <div className='form-name-container m-auto bg-gray-600 w-full h-14 mt-2 mb-4'>
+                        <form action="" className={`fade-left-to-right  ${contactElement?'animate':''}`}>
+                          <div className={`form-name-container fade-left-to-right  ${contactElement?'animate':''} m-auto bg-gray-600 w-full h-14 mt-2 mb-4`}>
                             <input className='w-full h-full focus:border-none text-black bg-gray-300 px-5' onChange={(e) => { setSenderName(e.target.value) }} value={senderName} type="text" placeholder='Name' />
                           </div>
-                          <div className='form-name-container m-auto bg-gray-600 w-full h-14 mt-2 mb-4'>
+
+                          <div className={`form-name-container fade-left-to-right  ${contactElement?'animate':''} m-auto bg-gray-600 w-full h-14 mt-2 mb-4`}>
                             <input className='w-full h-full text-black bg-gray-300 px-5' type="email" onChange={(e) => { setSenderEmai(e.target.value) }} value={senderEmail} placeholder='Email' />
                           </div>
-                          <div className='form-name-container m-auto bg-gray-600 w-full h-14 mt-2 mb-4'>
+                          <div className={`form-name-container fade-left-to-right  ${contactElement?'animate':''} m-auto bg-gray-600 w-full h-14 mt-2 mb-4`}>
                             <input className='w-full h-full text-black bg-gray-300 px-5' type="text" onChange={(e) => { setSubject(e.target.value) }} value={subject} placeholder='Subject' />
                           </div>
-                          <div className='form-name-container m-auto w-full h-fit mt-2 mb-4'>
+                          <div className={`form-name-container fade-left-to-right  ${contactElement?'animate':''} m-auto w-full h-fit mt-2 mb-4`}>
                             <textarea className='w-full h-full py-6 text-black bg-gray-300 px-5' rows={'7'} type="text" value={Message} onChange={(e) => { setMessage(e.target.value) }} placeholder='Message' />
                           </div>
-                          <div className='form-submit-button flex w-full h-11  '>
-                            <button className='bg-blue-500 w-1/3 h-full m-auto rounded-md ' onClick={(e) => { e.preventDefault(); sendMail() }}>Submit</button>
-                            <button className='bg-blue-500 w-1/3 h-full m-auto rounded-md ' onClick={Reset}> Reset</button>
+                          <div className={`form-submit-button flex w-full h-11 fade-left-to-right  ${contactElement?'animate':''}  `}>
+                            <button className={`bg-blue-500 w-1/3 h-full m-auto rounded-md fade-left-to-right  ${contactElement?'animate':''}`} onClick={(e) => { e.preventDefault(); sendMail() }}>Submit</button>
+                            <button className={`bg-blue-500 w-1/3 h-full m-auto rounded-md fade-left-to-right  ${contactElement?'animate':''} `} onClick={Reset}> Reset</button>
                           </div>
 
 
@@ -824,7 +928,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div id='project-extent-container-smp' className='pop-up-project-conatiner hidden m-auto mt-4 left-72 absolute bg-white rounded-lg shadow-2xl h-fit w-150 '>
+          <div id='project-extent-container-smp' className='pop-up-project-conatiner hidden ml-12 m-auto mt-4 left-72 absolute bg-white rounded-lg shadow-2xl h-fit w-150 '>
             <div className='nav-heading-container w-full h-fit flex flex-row px-2 py-4'>
               <div className="heaing m-auto w-3/4">SMART MAINTENANCE PORTAL</div>
               <div className="close-container m-auto"><i className='fa fa-close hover:cursor-pointer' onClick={closeProjectContainer}></i></div>
