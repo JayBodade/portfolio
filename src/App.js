@@ -456,10 +456,23 @@ function App() {
     const projectElement = document.getElementById('project');
     ele.addEventListener('scroll',function(){
     
-     console.log(projectElement.getBoundingClientRect().bottom , ele.getBoundingClientRect().bottom)
-     if(projectElement.getBoundingClientRect().bottom - 500  < ele.getBoundingClientRect().bottom ){
-     setProjectAnimate(true);
+     console.log(projectElement.getBoundingClientRect().bottom , ele.getBoundingClientRect())
+     if(ele.getBoundingClientRect().width <= 320){
+      if(projectElement.getBoundingClientRect().bottom - 1000  < ele.getBoundingClientRect().bottom ){
+        setProjectAnimate(true);
+        console.log('this is')
+        }
+
      }
+     else
+     {
+
+      if(projectElement.getBoundingClientRect().bottom - 500  < ele.getBoundingClientRect().bottom ){
+        setProjectAnimate(true);
+        }
+
+     }
+    
    
     
     })
