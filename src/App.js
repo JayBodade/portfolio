@@ -457,7 +457,7 @@ function App() {
     ele.addEventListener('scroll',function(){
     
      console.log(projectElement.getBoundingClientRect().bottom , ele.getBoundingClientRect().bottom)
-     if(projectElement.getBoundingClientRect().bottom - 300  < ele.getBoundingClientRect().bottom ){
+     if(projectElement.getBoundingClientRect().bottom - 500  < ele.getBoundingClientRect().bottom ){
      setProjectAnimate(true);
      }
    
