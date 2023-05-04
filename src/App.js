@@ -457,7 +457,7 @@ function App() {
     ele.addEventListener('scroll',function(){
     
      console.log(projectElement.getBoundingClientRect().bottom , ele.getBoundingClientRect().bottom)
-     if(projectElement.getBoundingClientRect().bottom - 380  < ele.getBoundingClientRect().bottom ){
+     if(projectElement.getBoundingClientRect().bottom - 300  < ele.getBoundingClientRect().bottom ){
      setProjectAnimate(true);
      }
    
@@ -473,8 +473,8 @@ function App() {
     const contacttElement = document.getElementById('contact');
     ele.addEventListener('scroll',function(){
     
-     console.log(contacttElement.getBoundingClientRect().bottom , ele.getBoundingClientRect().bottom)
-     if(contacttElement.getBoundingClientRect().bottom - 380  < ele.getBoundingClientRect().bottom ){
+    //  console.log(contacttElement.getBoundingClientRect().bottom , ele.getBoundingClientRect().bottom)
+     if(contacttElement.getBoundingClientRect().bottom -380   < ele.getBoundingClientRect().bottom ){
      setContactAnimate(true);
      }
    
