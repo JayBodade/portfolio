@@ -172,7 +172,7 @@ html{
   color: white;
 }
 
-@media only screen and (max-width:768px){
+@media  only screen and (min-width: 600px) and (max-width: 1024px){
   
   .leftside-container{
     
@@ -384,13 +384,13 @@ html{
   }
 
   #mail-pop-up{
-    margin-left: -38%;
+    margin-left: -38% !important;
     width: 73%;
     font-size: 18fpx;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 280px) and (max-width: 320px) {
  
 
   .leftside-container{
@@ -418,17 +418,19 @@ html{
   }
 
   .rightcont{
-    width: 390px !important;
+    width: 100% !important;
+    /* border: 2px solid black; */
   }
 
   .rightside-container{
     margin-left:0px;
     height: 20px;
-    width: 390px;
+    width: 84%;
+    overflow-x: hidden;
   }
 
   .project-description-container{
-    width: 330px;
+    width: 98%;
     margin-top: 40px;
   }
 
@@ -458,10 +460,12 @@ html{
    }
 
    .right-side-second-container{
-    width: 375px;
+    width: 105%;
     margin-bottom: 100%;
     margin-left: -15px;
     margin-top: -90px;
+    /* border: 2px solid black; */
+    height: fit-content !important;
    }
   
 
@@ -485,14 +489,15 @@ html{
    }
 
    .rigth-side-third-container{
-    width: 350px;
+    width: 100%;
+    /* border: 2px solid black; */
     margin-top: -250px;
    }
 
    .rigth-side-education-section{
 
     padding-top: 40%;
-    margin-left: 4px;
+    margin-left: 1px;
    }
    
    .education-row-content{
@@ -526,9 +531,9 @@ html{
    }
 
    .mail-sent-pop-up{
-    width: 340px;
+    width: 85%;
     border: 2px solid black;
-    margin-left: -105%;
+    margin-left: -114%;
     height: fit-content;
     padding-bottom: 5px;
     
@@ -583,8 +588,8 @@ html{
   }
 
   .maincontainer{
-    width: 360px;
-    border: 2px solid black;
+    width: 100%;
+   
     position: absolute;
    
     overflow: hidden;
@@ -600,8 +605,8 @@ html{
 
   #project-extent-container-smp{
     width: fit-content;
-    margin-left: -80%;  
-    width:345px ;
+    margin-left: -87%;
+    width: 94%;
     height: fit-content; 
     padding-left: 2px;
     padding-right: 2px;
@@ -612,8 +617,8 @@ html{
 
   #project-extent-container-chat{
     width: fit-content;
-    margin-left: -80%;  
-    width:345px ;
+    margin-left: -87%;
+    width: 94%;
     height: fit-content; 
     padding-left: 2px;
     padding-right: 2px;
@@ -626,8 +631,8 @@ html{
 #project-extent-container-ecom{
 
   width: fit-content;
-    margin-left: -80%;  
-    width:345px ;
+    margin-left: -87%;
+    width: 94%;
     height: fit-content; 
     padding-left: 2px;
     padding-right: 2px;
@@ -664,12 +669,13 @@ html{
 
   .project-container{
     
-    width:350px;
+    width:100%;
+    /* border: 2px solid black; */
     
   }
 
   .right-side-project-row-container{
-    width: 333px;
+    width: 90%;
   }
 
   .right-side-blog-section{
@@ -679,7 +685,7 @@ html{
 
   .contact-container{
 
-    width:350px;
+    width:98%;
     padding-left: 6px;
     padding-right: 6px;
     margin-bottom: -10px;
@@ -734,7 +740,7 @@ html{
   .project-Images-container-smp{
     margin-top: 10px;
     margin-left: 2px;
-    width:330px;
+    width:93%;
     height: 220px;
     
   }
@@ -742,7 +748,7 @@ html{
   .project-Images-container-ecom{
     margin-top: 10px;
     margin-left: 2px;
-    width:330px;
+    width:93%;
     height: 220px;
     
   }
@@ -751,10 +757,8 @@ html{
   .project-Images-container-chat{
     margin-top: 10px;
     margin-left: 2px;
-    width:330px;
+    width:93%;
     height: 220px;
-    
-    
 
 
   }
@@ -772,8 +776,8 @@ html{
   #project-extent-container-note{
 
     width: fit-content;
-    margin-left: -80%;  
-    width:345px ;
+    margin-left: -87%;
+    width: 94%;
     height: fit-content; 
     padding-left: 2px;
     padding-right: 2px;
@@ -783,9 +787,8 @@ html{
   .project-Images-container-notes {
     margin-top: 10px;
     margin-left: 2px;
-    width:330px;
+    width:93%;
     height: 220px;
-    
 
   }
 
@@ -800,14 +803,1059 @@ html{
 
 
   
+}
 
- 
+@media only screen and (min-width:340px ) and (max-width: 400px) {
+  .leftside-container{
+    display: none;
+    width: 600px;
+    margin-left: -10%;
+   
+  }
+  .navigator{
+    background-image: url("./Images/Snapchat-1768599857.jpg");
+    background-size: 100% 100%;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -63%;
 
+
+  }
+
+
+  .navigator:hover{
+    cursor: pointer;
+  }
+
+  .rightcont{
+    width: 100% !important;
+    /* border: 2px solid black; */
+  }
+
+  .rightside-container{
+    margin-left:0px;
+    height: 20px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .project-description-container{
+    width: 114%;
+    margin-top: 40px;
+  }
+
+   .rightside-first-container{
+    width: 375px;
+    height: 20px;
+   }
+
+   .heading-name-container{
+    width: 60%;
+    height:fit-content;
+
+
+   }
+
+   ::-webkit-scrollbar{
+    position: absolute;
+    scroll-margin-left: -30px;
+   }
+
+   .symbol-container{
+    margin-top: 60px;
+   
+   }
+   .sybmol{
+    margin-left: 15px;
+   }
+
+   .right-side-second-container{
+    width: 104%;
+    margin-bottom: 100%;
+    margin-left: -20px;
+    margin-top: -90px;
+    /* border: 2px solid black; */
+    height: fit-content !important;
+   }
+  
+
+   .right-side-containers-about{
+    display: flex;
+    flex-direction: column;
+    
+
+   }
+
+   .aboutblocks{
+    margin-bottom: 20px;
+    box-shadow: none;
+    width: 200px;
+    margin-left: 50px;
+   
+   }
+
+   .mail-status-text{
+    margin-left: 2px;
+   }
+
+   .rigth-side-third-container{
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-top: -250px;
+   }
+
+   .rigth-side-education-section{
+
+    padding-top: 40%;
+    margin-left: 1px;
+   }
+   
+   .education-row-content{
+    width: 94%;
+    font-size: 14px;
+    height: 120px;
+    margin-left: 10px;
+   }
+
+   .skill-row-content{
+    width: 94%;
+    font-size: 14px;
+    height: 70px;
+    margin-left: 10px;
+
+   }
+
+
+   .dropdown-languages-container{
+    width: 90%;
+    margin-left: 17px;
+   }
+
+   .dropdown-skill-container-language{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-left: 10px;
+    height: auto;
+   }
+
+   .mail-sent-pop-up{
+    width: 340px;
+    border: 2px solid black;
+    margin-left: -99%;
+    height: fit-content;
+    padding-bottom: 5px;
+    
+   }
+
+
+   .show{
+    display: block;
+    visibility: visible;
+   height:330px;
+  content-visibility: auto;
+   
+  
+  }
+
+
+
+
+
+
+  .langauge-row-conatiner{
+    margin-left: 0px;
+  }
+
+
+  .xshow-framework{
+    display: block;
+    visibility: visible;
+  
+   width: 54rem;
+   height:fit-content;
+  content-visibility: auto;
+   
+  
+  }
+
+  .dropdown-framework-container{
+    
+    width: 90%;
+    margin-left: 17px;
+   
+   
+  
+
+  }
+
+  .show-framework{
+   
+    visibility: visible;
+    height: 280px;
+    content-visibility: auto;
+  }
+
+  .maincontainer{
+    width: 100%;
+   
+    position: absolute;
+   
+    overflow: hidden;
+  }
+
+  
+  .dropdown-software-container{
+  
+    width: 90%;
+    margin-left: 17px;
+   
+  }
+
+  #project-extent-container-smp{
+    width: fit-content;
+    margin-left: -74%;
+    width: 94%;
+    height: fit-content; 
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 1px 2px 21px 7px;
+  
+    
+  }
+
+  #project-extent-container-chat{
+    width: fit-content;
+    margin-left: -74%;
+    width: 94%;
+    height: fit-content; 
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 1px 2px 21px 7px;
+
+  }
 
 
   
+#project-extent-container-ecom{
+
+  width: fit-content;
+  margin-left: -74%;
+    width: 94%;
+    height: fit-content; 
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 1px 2px 21px 7px;
+  }
+
+
+  .smp-project-images{
+    width: 10px;
+    height: 20px;
+  }
+
+
+  .show-software{
+    display: block;
+    visibility: visible;
+    height: 90px;
+    content-visibility: auto;
+
+  }
+
+
+  .dropdown-skill-container-framework{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .dropdown-skill-container-software{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .project-container{
+    
+    width:100%;
+    /* border: 2px solid black; */
+    
+  }
+
+  .right-side-project-row-container{
+    width: 90%;
+  }
+
+  .right-side-blog-section{
+    width: 99%;
+    margin-left: 17px;
+  }
+
+  .contact-container{
+
+    width:98%;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: -10px;
+   
+    
+
+  }
+
+  .button-drop-down{
+    margin-top: 3px;
+  }
+
+  .right-side-form-container{
+    
+    width: 100%;
+  }
+
+  .form-container{
+    width: 100%;
+    margin-left: 3.5px;
+  }
+
+  .projectContainer{
+    width: 300px;
+   
+  }
+
+  .project-Images-container{
+    width: 100%;
+    height:fit-content;
+  }
+
+  .smp-project-images{
+
+    margin-left: 4px;
+    background-image: url("Images/AdminLogin.png");
+    background-size:  100% 220px !important;
+   background-repeat: no-repeat;
+    animation: changesmpImages 20s  linear 2s infinite  ;
+  }
+
+ 
+  .ecom-project-images{
+
+    margin-left: 4px;
+    background-image: url("Images/ecom1.png");
+    background-size:  100% 220px !important;
+    animation: changeecomImages 20s  linear 2s infinite  ;
+    background-repeat: no-repeat;
+  }
+
+  .project-Images-container-smp{
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 100%;
+    height: 220px;
+    
+  }
+
+  .project-Images-container-ecom{
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 100%;
+    height: 220px;
+    
+  }
+
+
+  .project-Images-container-chat{
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 100%;
+    height: 220px;
+
+
+  }
+  .chat-project-images{
+
+    margin-left: 4px;
+    background-image: url("Images/chat1.png");
+    background-size:  100% 220px !important;
+    animation: changechatImages 20s  linear 2s infinite  ;
+    background-repeat: no-repeat;
+  }
+
+ 
+
+  #project-extent-container-note{
+
+    width: fit-content;
+    margin-left: -74%;
+    width: 94%;
+    height: fit-content; 
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 1px 2px 21px 7px;
+  }
+
+  .project-Images-container-notes {
+    margin-top: 10px;
+    margin-left: 18px;
+    width: 100%;
+    height: 220px;
+
+  }
+
+  .note-project-Images{
+    margin-left: 0px;
+    background-image: url("Images/chat1.png");
+    background-size:  100% 220px !important;
+    animation: changenotesImages 20s  linear 2s infinite  ;
+    background-repeat: no-repeat;
+  
+  }
+
+  
+  
 }
 
+@media only screen and (min-width:401px ) and (max-width: 500px) {
+  .leftside-container{
+    display: none;
+    width: 600px;
+    margin-left: -10%;
+   
+  }
+  .navigator{
+    background-image: url("./Images/Snapchat-1768599857.jpg");
+    background-size: 100% 100%;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -63%;
+
+
+  }
+
+
+  .navigator:hover{
+    cursor: pointer;
+  }
+
+  .rightcont{
+    width: 100% !important;
+    /* border: 2px solid black; */
+  }
+
+  .rightside-container{
+    margin-left:0px;
+    height: 20px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .project-description-container{
+    width: 130%;
+    margin-top: 40px;
+  }
+
+   .rightside-first-container{
+    width: 100%;
+    height: 20px;
+   }
+
+   .heading-name-container{
+    width: 60%;
+    height:fit-content;
+
+
+   }
+
+   ::-webkit-scrollbar{
+    position: absolute;
+    scroll-margin-left: -30px;
+   }
+
+   .symbol-container{
+    margin-top: 60px;
+   
+   }
+   .sybmol{
+    margin-left: 15px;
+   }
+
+   .right-side-second-container{
+    width: 104%;
+    margin-bottom: 100%;
+    margin-left: -20px;
+    margin-top: -90px;
+    /* border: 2px solid black; */
+    height: fit-content !important;
+   }
+  
+
+   .right-side-containers-about{
+    display: flex;
+    flex-direction: column;
+    
+
+   }
+
+   .aboutblocks{
+    margin-bottom: 20px;
+    box-shadow: none;
+    width: 200px;
+    margin-left: 50px;
+   
+   }
+
+   .mail-status-text{
+    margin-left: 2px;
+   }
+
+   .rigth-side-third-container{
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-top: -250px;
+   }
+
+   .rigth-side-education-section{
+
+    padding-top: 40%;
+    margin-left: 1px;
+   }
+   
+   .education-row-content{
+    width: 94%;
+    font-size: 14px;
+    height: 120px;
+    margin-left: 10px;
+   }
+
+   .skill-row-content{
+    width: 94%;
+    font-size: 14px;
+    height: 70px;
+    margin-left: 10px;
+
+   }
+
+
+   .dropdown-languages-container{
+    width: 90%;
+    margin-left: 17px;
+   }
+
+   .dropdown-skill-container-language{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-left: 10px;
+    height: auto;
+   }
+
+   .mail-sent-pop-up{
+    width: 353px;
+    border: 2px solid black;
+    margin-left: -82%;
+    height: fit-content;
+    padding-bottom: 5px;
+    
+   }
+
+
+   .show{
+    display: block;
+    visibility: visible;
+   height:330px;
+  content-visibility: auto;
+   
+  
+  }
+
+
+
+
+
+
+  .langauge-row-conatiner{
+    margin-left: 0px;
+  }
+
+
+  .xshow-framework{
+    display: block;
+    visibility: visible;
+  
+   width: 54rem;
+   height:fit-content;
+  content-visibility: auto;
+   
+  
+  }
+
+  .dropdown-framework-container{
+    
+    width: 90%;
+    margin-left: 17px;
+   
+   
+  
+
+  }
+
+  .show-framework{
+   
+    visibility: visible;
+    height: 280px;
+    content-visibility: auto;
+  }
+
+  .maincontainer{
+    width: 100%;
+   
+    position: absolute;
+   
+    overflow: hidden;
+  }
+
+  
+  .dropdown-software-container{
+  
+    width: 90%;
+    margin-left: 17px;
+   
+  }
+
+  #project-extent-container-smp{
+    width: fit-content;
+    margin-left: -65%;
+    width: 94%;
+    height: fit-content; 
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 1px 2px 21px 7px;
+  
+    
+  }
+
+  #project-extent-container-chat{
+    width: fit-content;
+    margin-left: -65%;
+    width: 94%;
+    height: fit-content; 
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 1px 2px 21px 7px;
+
+  }
+
+
+  
+#project-extent-container-ecom{
+
+  width: fit-content;
+  margin-left: -65%;
+    width: 94%;
+    height: fit-content; 
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 1px 2px 21px 7px;
+  }
+
+
+  .smp-project-images{
+    width: 10px;
+    height: 20px;
+  }
+
+
+  .show-software{
+    display: block;
+    visibility: visible;
+    height: 90px;
+    content-visibility: auto;
+
+  }
+
+
+  .dropdown-skill-container-framework{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .dropdown-skill-container-software{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .project-container{
+    
+    width:100%;
+    /* border: 2px solid black; */
+    
+  }
+
+  .right-side-project-row-container{
+    width: 90%;
+  }
+
+  .right-side-blog-section{
+    width: 99%;
+    margin-left: 17px;
+  }
+
+  .contact-container{
+
+    width:98%;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: -10px;
+   
+    
+
+  }
+
+  .button-drop-down{
+    margin-top: 3px;
+  }
+
+  .right-side-form-container{
+    
+    width: 100%;
+  }
+
+  .form-container{
+    width: 100%;
+    margin-left: 3.5px;
+  }
+
+  .projectContainer{
+    width: 300px;
+   
+  }
+
+  .project-Images-container{
+    width: 100%;
+    height:fit-content;
+  }
+
+  .smp-project-images{
+
+    margin-left: 4px;
+    background-image: url("Images/AdminLogin.png");
+    background-size:  100% 220px !important;
+   background-repeat: no-repeat;
+    animation: changesmpImages 20s  linear 2s infinite  ;
+  }
+
+ 
+  .ecom-project-images{
+
+    margin-left: 4px;
+    background-image: url("Images/ecom1.png");
+    background-size:  100% 220px !important;
+    animation: changeecomImages 20s  linear 2s infinite  ;
+    background-repeat: no-repeat;
+  }
+
+  .project-Images-container-smp{
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 118%;
+    height: 220px;
+    
+  }
+
+  .project-Images-container-ecom{
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 118%;
+    height: 220px;
+    
+  }
+
+
+  .project-Images-container-chat{
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 118%;
+    height: 220px;
+
+
+  }
+  .chat-project-images{
+
+    margin-left: 4px;
+    background-image: url("Images/chat1.png");
+    background-size:  100% 220px !important;
+    animation: changechatImages 20s  linear 2s infinite  ;
+    background-repeat: no-repeat;
+  }
+
+ 
+
+  #project-extent-container-note{
+
+    width: fit-content;
+    margin-left: -65%;
+    width: 94%;
+    height: fit-content; 
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 1px 2px 21px 7px;
+  }
+
+  .project-Images-container-notes {
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 118%;
+    height: 220px;
+
+  }
+
+  .note-project-Images{
+    margin-left: 0px;
+    background-image: url("Images/chat1.png");
+    background-size:  100% 220px !important;
+    animation: changenotesImages 20s  linear 2s infinite  ;
+    background-repeat: no-repeat;
+  
+  }
+
+  
+  
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1024px) {
+
+  .leftside-container{
+    
+    width: 200px;
+     margin-left: 1%;
+    
+   }
+ 
+   .image-container{
+    padding-left: 1px;
+    padding-right: 9px;
+ 
+   }
+ 
+   .rightside-container{
+    width: 811px;
+     overflow-x: hidden;
+   }
+ 
+   .rightside-first-container{
+     width: 100%;
+    
+    
+     overflow-x: hidden;
+   }
+ 
+   .right-side-second-container{
+     width: 89.6%;
+     /* border: 2px solid black; */
+     /* border: 2px solid black; */
+     height: 100% !important;
+ 
+   }
+ 
+   .right-side-second-section{
+     width: 100%;
+     height: fit-content;
+     
+   }
+ 
+ 
+   .home-image{
+     background-image: url("./Images/602575.png");
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   animation: changeImage  20s linear 4s  infinite  ;
+   }
+ 
+   .rigth-side-third-container{
+     width: 89.6%;
+     /* border: 2px solid black; */
+    
+ 
+   }
+ 
+   .rigth-side-education-section{
+     width: 100%;
+    
+   }
+ 
+   .education-row-content{
+     width: 97%;
+     font-size: 15.8px;
+     
+   }
+ 
+   .skill-row-content{
+     width: 97%;
+     font-size: 15.8px;
+ 
+   }
+ 
+   .button-drop-down{
+     margin-top: 3px;
+   }
+ 
+   .dropdown-languages-container{
+     width: 97%;
+     
+     
+   }
+ 
+   .dropdown-skill-container-language{
+     display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 10px;
+ 
+   }
+ 
+   .show{
+     display: block;
+     visibility: visible;
+    height:330px;
+   content-visibility: auto;
+    
+   
+   }
+ 
+   .dropdown-framework-container{
+ 
+     width: 97%;
+ 
+   }
+ 
+   .dropdown-skill-container-framework{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 10px;
+ 
+   }
+ 
+   .show-framework{
+    
+     visibility: visible;
+     height: 200px;
+     content-visibility: auto;
+   }
+ 
+   .dropdown-software-container{
+     width: 97%;
+ 
+ 
+   }
+ 
+   .dropdown-skill-container-software{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 209px;
+ 
+   }
+ 
+   .show-software{
+     display: block;
+     visibility: visible;
+     height: 90px;
+     content-visibility: auto;
+ 
+   }
+ 
+   .project-container {
+   
+     width:89.8%;
+   
+   }
+ 
+   #project-extent-container-smp{
+    
+    margin-left: -23.5%;
+    width: 91%;
+    box-shadow: 2px 2px 18px 12px;
+    font-size: 20px;
+   }
+ 
+   .project-Images-container-smp{
+    
+     width: 93%;
+   }
+ 
+   #project-extent-container-ecom{
+    margin-left: -23.5%;
+    width: 91%;
+    box-shadow: 2px 2px 18px 12px;
+    font-size: 20px;
+ 
+ 
+   }
+ 
+   .project-Images-container-ecom{
+     width: 93%;
+ 
+   }
+ 
+   #project-extent-container-chat{
+    margin-left: -23.5%;
+    width: 91%;
+    box-shadow: 2px 2px 18px 12px;
+    font-size: 20px;
+ 
+   }
+ 
+   .project-Images-container-chat{
+     width: 93%;
+ 
+   }
+ 
+   #project-extent-container-note{
+    margin-left: -23.5%;
+    width: 91%;
+    box-shadow: 2px 2px 18px 12px;
+    font-size: 20px;
+ 
+ 
+   }
+ 
+   .project-Images-container-notes{
+     width: 93%;
+ 
+   }
+ 
+   .contact-container{
+   
+     width: 89.8%;
+   
+   }
+ 
+   .form-name-container{
+     width: 122%;
+     margin-left: -32px;
+ 
+   }
+ 
+   .form-submit-button{
+     width: 108%;
+   }
+ 
+   #mail-pop-up{
+    margin-left: -27% !important;
+    width: 80%;
+    font-size: 21px;
+   }
+
+  
+}
 
 .smp-project-images{
   width: 100%;
