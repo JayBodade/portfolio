@@ -536,6 +536,7 @@ html{
     margin-left: -114%;
     height: fit-content;
     padding-bottom: 5px;
+    margin-top: 30%;
     
    }
 
@@ -947,11 +948,12 @@ html{
    }
 
    .mail-sent-pop-up{
-    width: 340px;
+    width: 369px;
     border: 2px solid black;
-    margin-left: -90%;
+    margin-left: -88%;
     height: fit-content;
     padding-bottom: 5px;
+    margin-top: 10%;
     
    }
 
@@ -2465,7 +2467,7 @@ html{
   
 }
 
-@media  only screen and (min-width:370px) and (max-width: 394px) {
+@media  only screen and (min-width:377px) and (max-width: 394px) {
   .leftside-container{
     display: none;
     width: 600px;
@@ -2609,7 +2611,7 @@ html{
    .mail-sent-pop-up{
     width: 340px;
     border: 2px solid black;
-    margin-left: -99%;
+    margin-left: -92%;
     height: fit-content;
     padding-bottom: 5px;
     
@@ -3293,6 +3295,833 @@ html{
   
 }
 
+
+@media only screen and (min-width:351px ) and (max-width: 362px) {
+  .leftside-container{
+    display: none;
+    width: 600px;
+    margin-left: -10%;
+   
+  }
+  .navigator{
+    background-image: url("./Images/Snapchat-1768599857.jpg");
+    background-size: 100% 100%;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -63%;
+
+
+  }
+
+
+  .navigator:hover{
+    cursor: pointer;
+  }
+
+  .rightcont{
+    width: 100% !important;
+    /* border: 2px solid black; */
+  }
+
+  .rightside-container{
+    margin-left:0px;
+    height: 20px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .project-description-container{
+    width: 114%;
+    margin-top: 40px;
+  }
+
+   .rightside-first-container{
+    width: 100%;
+    height: 20px;
+   }
+
+   .heading-name-container{
+    width: 60%;
+    height:fit-content;
+
+
+   }
+
+   ::-webkit-scrollbar{
+    position: absolute;
+    scroll-margin-left: -30px;
+   }
+
+   .symbol-container{
+    margin-top: 60px;
+   
+   }
+   .sybmol{
+    margin-left: 15px;
+   }
+
+   .right-side-second-container{
+    width: 104%;
+    margin-bottom: 100%;
+    margin-left: -20px;
+    margin-top: -90px;
+    /* border: 2px solid black; */
+    height: fit-content !important;
+   }
+  
+
+   .right-side-containers-about{
+    display: flex;
+    flex-direction: column;
+    
+
+   }
+
+   .aboutblocks{
+    margin-bottom: 20px;
+    box-shadow: none;
+    width: 200px;
+    margin-left: 50px;
+   
+   }
+
+   .mail-status-text{
+    margin-left: 2px;
+   }
+
+   .rigth-side-third-container{
+    width: 98%;
+    /* border: 2px solid black; */
+    margin-top: -250px;
+   }
+
+   .rigth-side-education-section{
+
+    padding-top: 40%;
+    margin-left: 1px;
+   }
+   
+   .education-row-content{
+    width: 94%;
+    font-size: 14px;
+    height: 120px;
+    margin-left: 10px;
+   }
+
+   .skill-row-content{
+    width: 94%;
+    font-size: 14px;
+    height: 70px;
+    margin-left: 10px;
+
+   }
+
+
+   .dropdown-languages-container{
+    width: 90%;
+    margin-left: 17px;
+   }
+
+   .dropdown-skill-container-language{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-left: 10px;
+    height: auto;
+   }
+
+   .mail-sent-pop-up{
+    width: 343px;
+    border: 2px solid black;
+    margin-left: -105%;
+    margin-top: 28%;
+    height: fit-content;
+    padding-bottom: 5px;
+    
+   }
+
+
+   .show{
+    display: block;
+    visibility: visible;
+   height:330px;
+  content-visibility: auto;
+   
+  
+  }
+
+
+
+
+
+
+  .langauge-row-conatiner{
+    margin-left: 0px;
+  }
+
+
+  .xshow-framework{
+    display: block;
+    visibility: visible;
+  
+   width: 54rem;
+   height:fit-content;
+  content-visibility: auto;
+   
+  
+  }
+
+  .dropdown-framework-container{
+    
+    width: 90%;
+    margin-left: 17px;
+   
+   
+  
+
+  }
+
+  .show-framework{
+   
+    visibility: visible;
+    height: 280px;
+    content-visibility: auto;
+  }
+
+  .maincontainer{
+    width: 100%;
+   
+    position: absolute;
+   
+    overflow: hidden;
+  }
+
+  
+  .dropdown-software-container{
+  
+    width: 90%;
+    margin-left: 17px;
+   
+  }
+
+  #project-extent-container-smp{
+    width: fit-content;
+    margin-left: -78%;
+    width: 96%;
+    height: fit-content; 
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 1px 2px 21px 7px;
+  
+    
+  }
+
+  #project-extent-container-chat{
+    width: fit-content;
+    margin-left: -78%;
+    width: 96%;
+    height: fit-content; 
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 1px 2px 21px 7px;
+
+  }
+
+
+  
+#project-extent-container-ecom{
+
+  width: fit-content;
+  margin-left: -78%;
+  width: 96%;
+    height: fit-content; 
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 1px 2px 21px 7px;
+  }
+
+
+  .smp-project-images{
+    width: 10px;
+    height: 20px;
+  }
+
+
+  .show-software{
+    display: block;
+    visibility: visible;
+    height: 90px;
+    content-visibility: auto;
+
+  }
+
+
+  .dropdown-skill-container-framework{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .dropdown-skill-container-software{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .project-container{
+    
+    width:100%;
+    /* border: 2px solid black; */
+    
+  }
+
+  .right-side-project-row-container{
+    width: 90%;
+  }
+
+  .right-side-blog-section{
+    width: 99%;
+    margin-left: 17px;
+  }
+
+  .contact-container{
+    width: 95%;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: -10px;
+   
+    
+
+  }
+
+  .button-drop-down{
+    margin-top: 3px;
+  }
+
+  .right-side-form-container{
+    
+    width: 100%;
+  }
+
+  .form-container{
+    width: 100%;
+    margin-left: 3.5px;
+  }
+
+  .projectContainer{
+    width: 300px;
+   
+  }
+
+  .project-Images-container{
+    width: 100%;
+    height:fit-content;
+  }
+
+  .smp-project-images{
+
+    margin-left: 4px;
+    background-image: url("Images/AdminLogin.png");
+    background-size:  100% 220px !important;
+   background-repeat: no-repeat;
+    animation: changesmpImages 20s  linear 2s infinite  ;
+  }
+
+ 
+  .ecom-project-images{
+
+    margin-left: 4px;
+    background-image: url("Images/ecom1.png");
+    background-size:  100% 220px !important;
+    animation: changeecomImages 20s  linear 2s infinite  ;
+    background-repeat: no-repeat;
+  }
+
+  .project-Images-container-smp{
+    margin-top: 10px;
+    margin-left: 7px;
+    width: 106%;
+    height: 220px;
+    
+  }
+
+  .project-Images-container-ecom{
+    margin-top: 10px;
+    margin-left: 7px;
+    width: 106%;
+    height: 220px;
+    
+  }
+
+
+  .project-Images-container-chat{
+    margin-top: 10px;
+    margin-left: 7px;
+    width: 106%;
+    height: 220px;
+
+
+  }
+  .chat-project-images{
+
+    margin-left: 4px;
+    background-image: url("Images/chat1.png");
+    background-size:  100% 220px !important;
+    animation: changechatImages 20s  linear 2s infinite  ;
+    background-repeat: no-repeat;
+  }
+
+ 
+
+  #project-extent-container-note{
+
+    width: fit-content;
+    margin-left: -78%;
+    width: 96%;
+    height: fit-content; 
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 1px 2px 21px 7px;
+  }
+
+  .project-Images-container-notes {
+    margin-top: 10px;
+    margin-left: 7px;
+    width: 106%;
+    height: 220px;
+
+  }
+
+  .note-project-Images{
+    margin-left: 0px;
+    background-image: url("Images/chat1.png");
+    background-size:  100% 220px !important;
+    animation: changenotesImages 20s  linear 2s infinite  ;
+    background-repeat: no-repeat;
+  
+  }
+
+  
+  
+}
+
+@media only screen and (min-width:363px ) and (max-width: 376px) {
+  .leftside-container{
+    display: none;
+    width: 600px;
+    margin-left: -10%;
+   
+  }
+  .navigator{
+    background-image: url("./Images/Snapchat-1768599857.jpg");
+    background-size: 100% 100%;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -63%;
+
+
+  }
+
+
+  .navigator:hover{
+    cursor: pointer;
+  }
+
+  .rightcont{
+    width: 100% !important;
+    /* border: 2px solid black; */
+  }
+
+  .rightside-container{
+    margin-left:0px;
+    height: 20px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .project-description-container{
+    width: 118%;
+    margin-top: 40px;
+  }
+
+   .rightside-first-container{
+    width: 100%;
+    height: 20px;
+   }
+
+   .heading-name-container{
+    width: 60%;
+    height:fit-content;
+
+
+   }
+
+   ::-webkit-scrollbar{
+    position: absolute;
+    scroll-margin-left: -30px;
+   }
+
+   .symbol-container{
+    margin-top: 60px;
+   
+   }
+   .sybmol{
+    margin-left: 15px;
+   }
+
+   .right-side-second-container{
+    width: 104%;
+    margin-bottom: 100%;
+    margin-left: -20px;
+    margin-top: -90px;
+    /* border: 2px solid black; */
+    height: fit-content !important;
+   }
+  
+
+   .right-side-containers-about{
+    display: flex;
+    flex-direction: column;
+    
+
+   }
+
+   .aboutblocks{
+    margin-bottom: 20px;
+    box-shadow: none;
+    width: 200px;
+    margin-left: 50px;
+   
+   }
+
+   .mail-status-text{
+    margin-left: 2px;
+   }
+
+   .rigth-side-third-container{
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-top: -250px;
+   }
+
+   .rigth-side-education-section{
+
+    padding-top: 40%;
+    margin-left: 1px;
+   }
+   
+   .education-row-content{
+    width: 94%;
+    font-size: 14px;
+    height: 120px;
+    margin-left: 10px;
+   }
+
+   .skill-row-content{
+    width: 94%;
+    font-size: 14px;
+    height: 70px;
+    margin-left: 10px;
+
+   }
+
+
+   .dropdown-languages-container{
+    width: 90%;
+    margin-left: 17px;
+   }
+
+   .dropdown-skill-container-language{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-left: 10px;
+    height: auto;
+   }
+
+   .mail-sent-pop-up{
+    width: 353px;
+    border: 2px solid black;
+    margin-left: -100%;
+    margin-top: 40%;
+    height: fit-content;
+    padding-bottom: 5px;
+    
+   }
+
+
+   .show{
+    display: block;
+    visibility: visible;
+   height:330px;
+  content-visibility: auto;
+   
+  
+  }
+
+
+
+
+
+
+  .langauge-row-conatiner{
+    margin-left: 0px;
+  }
+
+
+  .xshow-framework{
+    display: block;
+    visibility: visible;
+  
+   width: 54rem;
+   height:fit-content;
+  content-visibility: auto;
+   
+  
+  }
+
+  .dropdown-framework-container{
+    
+    width: 90%;
+    margin-left: 17px;
+   
+   
+  
+
+  }
+
+  .show-framework{
+   
+    visibility: visible;
+    height: 280px;
+    content-visibility: auto;
+  }
+
+  .maincontainer{
+    width: 100%;
+   
+    position: absolute;
+   
+    overflow: hidden;
+  }
+
+  
+  .dropdown-software-container{
+  
+    width: 90%;
+    margin-left: 17px;
+   
+  }
+
+  #project-extent-container-smp{
+    width: fit-content;
+    margin-left: -75%;
+    width: 96%;
+    height: fit-content; 
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 1px 2px 21px 7px;
+  
+    
+  }
+
+  #project-extent-container-chat{
+    width: fit-content;
+    margin-left: -75%;
+    width: 96%;
+    height: fit-content; 
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 1px 2px 21px 7px;
+
+  }
+
+
+  
+#project-extent-container-ecom{
+
+  width: fit-content;
+  margin-left: -75%;
+  width: 96%;
+    height: fit-content; 
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 1px 2px 21px 7px;
+  }
+
+
+  .smp-project-images{
+    width: 10px;
+    height: 20px;
+  }
+
+
+  .show-software{
+    display: block;
+    visibility: visible;
+    height: 90px;
+    content-visibility: auto;
+
+  }
+
+
+  .dropdown-skill-container-framework{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .dropdown-skill-container-software{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .project-container{
+    
+    width:100%;
+    /* border: 2px solid black; */
+    
+  }
+
+  .right-side-project-row-container{
+    width: 90%;
+  }
+
+  .right-side-blog-section{
+    width: 99%;
+    margin-left: 17px;
+  }
+
+  .contact-container{
+
+    width:98%;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: -10px;
+   
+    
+
+  }
+
+  .button-drop-down{
+    margin-top: 3px;
+  }
+
+  .right-side-form-container{
+    
+    width: 100%;
+  }
+
+  .form-container{
+    width: 100%;
+    margin-left: 3.5px;
+  }
+
+  .projectContainer{
+    width: 300px;
+   
+  }
+
+  .project-Images-container{
+    width: 100%;
+    height:fit-content;
+  }
+
+  .smp-project-images{
+
+    margin-left: 4px;
+    background-image: url("Images/AdminLogin.png");
+    background-size:  100% 220px !important;
+   background-repeat: no-repeat;
+    animation: changesmpImages 20s  linear 2s infinite  ;
+  }
+
+ 
+  .ecom-project-images{
+
+    margin-left: 4px;
+    background-image: url("Images/ecom1.png");
+    background-size:  100% 220px !important;
+    animation: changeecomImages 20s  linear 2s infinite  ;
+    background-repeat: no-repeat;
+  }
+
+  .project-Images-container-smp{
+    margin-top: 10px;
+    margin-left: 9px;
+    width: 109%;
+    height: 220px;
+    
+  }
+
+  .project-Images-container-ecom{
+    margin-top: 10px;
+    margin-left: 9px;
+    width: 109%;
+    height: 220px;
+    
+  }
+
+
+  .project-Images-container-chat{
+    margin-top: 10px;
+    margin-left: 9px;
+    width: 109%;
+    height: 220px;
+
+
+  }
+  .chat-project-images{
+
+    margin-left: 4px;
+    background-image: url("Images/chat1.png");
+    background-size:  100% 220px !important;
+    animation: changechatImages 20s  linear 2s infinite  ;
+    background-repeat: no-repeat;
+  }
+
+ 
+
+  #project-extent-container-note{
+
+    width: fit-content;
+    margin-left: -75%;
+    width: 96%;
+    height: fit-content; 
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 1px 2px 21px 7px;
+  }
+
+  .project-Images-container-notes {
+    margin-top: 10px;
+    margin-left: 9px;
+    width: 109%;
+    height: 220px;
+
+  }
+
+  .note-project-Images{
+    margin-left: 0px;
+    background-image: url("Images/chat1.png");
+    background-size:  100% 220px !important;
+    animation: changenotesImages 20s  linear 2s infinite  ;
+    background-repeat: no-repeat;
+  
+  }
+
+  
+  
+}
 
 @media only screen and (min-width: 1000px) and (max-width: 1024px) {
 
