@@ -217,32 +217,47 @@ function App() {
 
   const closeProjectContainer = (e) => {
     const element = document.getElementById('project-extent-container-smp');
-    element.classList.add('hidden');
+   
+    element.classList.remove('pop');
+    
   }
 
   const SmpDropDown = (e) => {
-    console.log(e.target.value)
+    // console.log(e.target.value)
     const element = document.getElementById('project-extent-container-smp');
-    element.classList.remove('hidden');
+    
+    const elementNote = document.getElementById('project-extent-container-note');
+    elementNote.classList.remove('pop');
+    const elementSmp = document.getElementById('project-extent-container-smp');
+    elementSmp.classList.remove('pop');
+    const elementEcom = document.getElementById('project-extent-container-ecom');
+    elementEcom.classList.remove('pop');
+  
+    element.classList.add('pop');
+    
+
 
   }
 
   const closeNoteContainer = (e) => {
 
+
     const element = document.getElementById('project-extent-container-note');
-    element.classList.add('hidden');
+    // element.classList.add('hidden');
+    element.classList.remove('pop');
   }
 
   const noteDropDown = (e) => {
 
     const element = document.getElementById('project-extent-container-note');
-    element.classList.remove('hidden');
+   
     const elementchat = document.getElementById('project-extent-container-chat');
-    elementchat.classList.add('hidden');
+    elementchat.classList.remove('pop');
     const elementSmp = document.getElementById('project-extent-container-smp');
-    elementSmp.classList.add('hidden');
+    elementSmp.classList.remove('pop');
     const elementEcom = document.getElementById('project-extent-container-ecom');
-    elementEcom.classList.add('hidden');
+    elementEcom.classList.remove('pop');
+    element.classList.add('pop');
 
   }
 
@@ -250,37 +265,42 @@ function App() {
   const closeEcommerceContainer = (e) => {
 
     const element = document.getElementById('project-extent-container-ecom');
-    element.classList.add('hidden');
+    // element.classList.add('hidden');
+    element.classList.remove('pop');
 
   }
 
   const ecomDropDown = (e) => {
     const element = document.getElementById('project-extent-container-ecom');
-    element.classList.remove('hidden');
+    // element.classList.remove('pop');
     const elementchat = document.getElementById('project-extent-container-chat');
-    elementchat.classList.add('hidden');
+    elementchat.classList.remove('pop');
     const elementNote = document.getElementById('project-extent-container-note');
-    elementNote.classList.add('hidden');
+    elementNote.classList.remove('pop');
     const elementSmp = document.getElementById('project-extent-container-smp');
-    elementSmp.classList.add('hidden');
+    elementSmp.classList.remove('pop');
+    element.classList.add('pop');
   }
 
   const closeChatContainer = (e) => {
 
     const element = document.getElementById('project-extent-container-chat');
-    element.classList.add('hidden');
+   
+    element.classList.remove('pop');
 
   }
 
   const cahtDropDown = (e) => {
     const element = document.getElementById('project-extent-container-chat');
-    element.classList.remove('hidden');
+
     const elementNote = document.getElementById('project-extent-container-note');
-    elementNote.classList.add('hidden');
+    elementNote.classList.remove('pop');
     const elementSmp = document.getElementById('project-extent-container-smp');
-    elementSmp.classList.add('hidden');
+    elementSmp.classList.remove('pop');
     const elementEcom = document.getElementById('project-extent-container-ecom');
-    elementEcom.classList.add('hidden');
+    elementEcom.classList.remove('pop');
+    element.classList.add('pop');
+    console.log(element.classList);
   }
 
 
@@ -406,11 +426,21 @@ function App() {
     ele.addEventListener('scroll',function(){
     
     //  console.log(aboutElement.getBoundingClientRect().bottom < ele.getBoundingClientRect().bottom)
-     if(aboutElement.getBoundingClientRect().bottom - 180 < ele.getBoundingClientRect().bottom ){
-     setAnimate(true);
-     }
+    if(ele.getBoundingClientRect().width <= 320){
+      if(aboutElement.getBoundingClientRect().bottom - 330 < ele.getBoundingClientRect().bottom ){
+        setAnimate(true);
+        }
+       
+
+    }else{
+      if(aboutElement.getBoundingClientRect().bottom - 180 < ele.getBoundingClientRect().bottom ){
+        setAnimate(true);
+        }
+
+    }
     
-    })
+    
+    });
     
 
   },[])
@@ -428,7 +458,7 @@ function App() {
      }
    
     
-    })
+    });
     
 
   },[])
@@ -445,7 +475,7 @@ function App() {
      }
    
     
-    })
+    });
     
 
   },[])
@@ -456,19 +486,20 @@ function App() {
     const projectElement = document.getElementById('project');
     ele.addEventListener('scroll',function(){
     
-     console.log(projectElement.getBoundingClientRect().bottom , ele.getBoundingClientRect())
+    //  console.log(projectElement.getBoundingClientRect().bottom , ele.getBoundingClientRect())
      if(ele.getBoundingClientRect().width <= 320){
-      if(projectElement.getBoundingClientRect().bottom - 1000  < ele.getBoundingClientRect().bottom ){
+      if(projectElement.getBoundingClientRect().bottom - 1300  < ele.getBoundingClientRect().bottom ){
         setProjectAnimate(true);
-        console.log('this is')
+       
         }
 
      }
      else
      {
 
-      if(projectElement.getBoundingClientRect().bottom - 500  < ele.getBoundingClientRect().bottom ){
+      if(projectElement.getBoundingClientRect().bottom - 700  < ele.getBoundingClientRect().bottom ){
         setProjectAnimate(true);
+       
         }
 
      }
@@ -647,16 +678,16 @@ function App() {
                       <div className='text  ml-4 '>
                         <h5>About Us</h5>
                       </div>
-                      <div className='about-descrption mt-7 ml-8  text-left mb-10'>
-                        <p>Hello, my name is Jay and I am a computer science student with a passion for web development. As a skilled web developer, I have honed my skills in languages such as HTML, CSS, JavaScript, and Node, and I have experience working with various web development frameworks such as React, Tailwind CSS , ExpressJS.</p>
+                      <div className={`about-descrption mt-7 ml-8  text-left mb-10 fade-left-to-right ${animate ? 'animate' : ""}`}>
+                        <p className={`fade-left-to-right ${animate ? 'animate' : ""}`}>Hello, my name is Jay and I am a computer science student with a passion for web development. As a skilled web developer, I have honed my skills in languages such as HTML, CSS, JavaScript, and Node, and I have experience working with various web development frameworks such as React, Tailwind CSS , ExpressJS.</p>
                         <br />
-                        <p>I am dedicated to delivering high-quality, user-friendly websites that meet the needs and exceed the expectations of my clients. I am a quick learner and a problem solver, always looking for ways to improve my skills and tackle new challenges.</p>
+                        <p className={`fade-left-to-right ${animate ? 'animate' : ""}`}>I am dedicated to delivering high-quality, user-friendly websites that meet the needs and exceed the expectations of my clients. I am a quick learner and a problem solver, always looking for ways to improve my skills and tackle new challenges.</p>
                         <br />
-                        <p>In addition to my technical skills, I am a strong communicator and a team player. I value collaboration and believe that open communication and constructive feedback are key to successful projects.
+                        <p className={`fade-left-to-right ${animate ? 'animate' : ""}`}>In addition to my technical skills, I am a strong communicator and a team player. I value collaboration and believe that open communication and constructive feedback are key to successful projects.
 
                         </p>
                         <br />
-                        <p>Thank you for taking the time to read my about me description. I look forward to hearing from you and discussing how I can help bring your web development vision to life.</p>
+                        <p className={`fade-left-to-right ${animate ? 'animate' : ""}`}>Thank you for taking the time to read my about me description. I look forward to hearing from you and discussing how I can help bring your web development vision to life.</p>
                       </div>
                       {/* <div className='right-side-containers-about mb-20 flex mt-36'>
                       <div className='aboutblocks w-44 h-40 border m-auto shadow-2xl  border-b-blue-700'>
@@ -859,8 +890,8 @@ function App() {
                   </div>
                 </section>
               </div> */}
-                <div className={`project-container fade-up ${projectElement ? 'animate':''} w-full h-fit mt-16 mb-16`}>
-                  <section id='project' className='right-side-blog-section w-full h-fit'>
+                <div className={`project-container fade-up ${projectElement ? 'animate':''}  w-full h-fit  mb-8`}>
+                  <section id='project' className='right-side-blog-section w-full h-fit py-20 '>
                     <div className='project-heading-container w-full h-10 mt-1 py-12  px-4'>
                       <h1 >Project</h1>
                     </div>
@@ -941,7 +972,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div id='project-extent-container-smp' className='pop-up-project-conatiner hidden ml-12 m-auto mt-4 left-72 absolute bg-white rounded-lg shadow-2xl h-fit w-150 '>
+          <div id='project-extent-container-smp' className='pop-up-project-conatiner   ml-12 m-auto mt-4 left-72 absolute bg-white rounded-lg shadow-2xl h-fit w-150 '>
             <div className='nav-heading-container w-full h-fit flex flex-row px-2 py-4'>
               <div className="heaing m-auto w-3/4">SMART MAINTENANCE PORTAL</div>
               <div className="close-container m-auto"><i className='fa fa-close hover:cursor-pointer' onClick={closeProjectContainer}></i></div>
@@ -964,7 +995,7 @@ function App() {
             </div>
           </div>
 
-          <div id='project-extent-container-ecom' className='pop-up-project-conatiner hidden m-auto mt-4 left-72 absolute bg-white rounded-lg shadow-2xl h-fit w-150 '>
+          <div id='project-extent-container-ecom' className='pop-up-project-conatiner ml-12 m-auto mt-4 left-72 absolute bg-white rounded-lg shadow-2xl h-fit w-150 '>
             <div className='nav-heading-container w-full h-fit flex flex-row px-2 py-4'>
               <div className="heaing m-auto w-3/4">E-COMMERCE</div>
               <div className="close-container m-auto"><i className='fa fa-close hover:cursor-pointer' onClick={closeEcommerceContainer}></i></div>
@@ -982,7 +1013,7 @@ function App() {
             </div>
           </div>
 
-          <div id='project-extent-container-chat' className='pop-up-project-conatiner hidden m-auto mt-4 left-72 absolute bg-white rounded-lg shadow-2xl h-fit w-150 '>
+          <div id='project-extent-container-chat' className='pop-up-project-conatiner ml-12  m-auto mt-4 left-72 absolute bg-white rounded-lg shadow-2xl h-fit w-150 '>
             <div className='nav-heading-container w-full h-fit flex flex-row px-2 py-4'>
               <div className="heaing m-auto w-3/4">CHAT APPLICATION</div>
               <div className="close-container m-auto"><i className='fa fa-close hover:cursor-pointer' onClick={closeChatContainer}></i></div>
@@ -1004,7 +1035,7 @@ function App() {
             </div>
           </div>
 
-          <div id='project-extent-container-note' className='pop-up-project-conatiner hidden m-auto mt-4 left-72 absolute bg-white rounded-lg shadow-2xl h-fit w-150 '>
+          <div id='project-extent-container-note' className='pop-up-project-conatiner ml-12  m-auto mt-4 left-72 absolute bg-white rounded-lg shadow-2xl h-fit w-150 '>
             <div className='nav-heading-container w-full h-fit flex flex-row px-2 py-4'>
               <div className="heaing m-auto w-3/4">I - NOTEBOOK</div>
               <div className="close-container m-auto"><i className='fa fa-close hover:cursor-pointer' onClick={closeNoteContainer}></i></div>
