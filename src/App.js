@@ -723,11 +723,11 @@ function App() {
                     </div>
                     <div className=' symbol-container w-full h-20  '>
                       <div className=' w-full h-full flex'>
-                        <a className=' m-auto' href="https://instagram.com/jay_bodade.243?igshid=ZDdkNTZiNTM=" target='_blank' l="noreferrer"><i className='sybmol fa fa-instagram m-auto hover:cursor-pointer' style={{ fontSize: '29px', color: 'black' }} >
+                        <a className=' m-auto' href="https://instagram.com/jay_bodade.243?igshid=ZDdkNTZiNTM=" target='_blank' rel="noreferrer"><i className='sybmol fa fa-instagram m-auto hover:cursor-pointer' style={{ fontSize: '29px', color: 'black' }} >
 
                         </i></a>
-                        <a href="https://www.linkedin.com/in/jay-bodade-b27083223/" className='m-auto' target='_blank' l="noreferrer">  <i className='sybmol fa fa-linkedin m-auto' style={{ fontSize: '29px', color: 'black' }}></i></a>
-                        <a href="https://github.com/JayBodade" className='m-auto' target='_blank' l="noreferrer"> <i className='sybmol fa fa-github m-auto' style={{ fontSize: '29px', color: 'black' }}></i></a>
+                        <a href="https://www.linkedin.com/in/jay-bodade-b27083223/" className='m-auto' target='_blank' rel="noreferrer">  <i className='sybmol fa fa-linkedin m-auto' style={{ fontSize: '29px', color: 'black' }}></i></a>
+                        <a href="https://github.com/JayBodade" className='m-auto' target='_blank' rel="noreferrer"> <i className='sybmol fa fa-github m-auto' style={{ fontSize: '29px', color: 'black' }}></i></a>
                       </div>
 
                     </div>
