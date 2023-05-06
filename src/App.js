@@ -55,9 +55,6 @@ import note2 from "./../src/Images/note2.png"
 import note3 from "./../src/Images/note3.png"
 import note4 from "./../src/Images/note4.png"
 
-import ecomvideo from "./../src/Images/ecommerce.mp4"
-
-
 
 
 
@@ -97,7 +94,7 @@ function App() {
   const ecomvideoRef=useRef(null);
 
   const [mailStatus, setMailStatus] = useState('');
-  const [load,setLoad]=useState(false);
+  
   const [animate, setAnimate] = useState(false);
   const [skillElement,setskillAnimate]=useState(false);
   const [projectElement,setProjectAnimate]=useState(false);
@@ -377,6 +374,7 @@ function App() {
     link.href = url;
     link.download = 'resume.pdf';
     link.target = "_blank";
+    link.rel="noreferrer";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -725,11 +723,11 @@ function App() {
                     </div>
                     <div className=' symbol-container w-full h-20  '>
                       <div className=' w-full h-full flex'>
-                        <a className=' m-auto' href="https://instagram.com/jay_bodade.243?igshid=ZDdkNTZiNTM=" target='_blank'><i className='sybmol fa fa-instagram m-auto hover:cursor-pointer' style={{ fontSize: '29px', color: 'black' }} >
+                        <a className=' m-auto' href="https://instagram.com/jay_bodade.243?igshid=ZDdkNTZiNTM=" target='_blank' l="noreferrer"><i className='sybmol fa fa-instagram m-auto hover:cursor-pointer' style={{ fontSize: '29px', color: 'black' }} >
 
                         </i></a>
-                        <a href="https://www.linkedin.com/in/jay-bodade-b27083223/" className='m-auto' target='_blank'>  <i className='sybmol fa fa-linkedin m-auto' style={{ fontSize: '29px', color: 'black' }}></i></a>
-                        <a href="https://github.com/JayBodade" className='m-auto' target='_blank'> <i className='sybmol fa fa-github m-auto' style={{ fontSize: '29px', color: 'black' }}></i></a>
+                        <a href="https://www.linkedin.com/in/jay-bodade-b27083223/" className='m-auto' target='_blank' l="noreferrer">  <i className='sybmol fa fa-linkedin m-auto' style={{ fontSize: '29px', color: 'black' }}></i></a>
+                        <a href="https://github.com/JayBodade" className='m-auto' target='_blank' l="noreferrer"> <i className='sybmol fa fa-github m-auto' style={{ fontSize: '29px', color: 'black' }}></i></a>
                       </div>
 
                     </div>
