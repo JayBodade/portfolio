@@ -55,6 +55,8 @@ import note2 from "./../src/Images/note2.png"
 import note3 from "./../src/Images/note3.png"
 import note4 from "./../src/Images/note4.png"
 
+import ecomvideo from "./../src/Images/ecommerce.mp4"
+
 
 
 
@@ -77,6 +79,7 @@ function App() {
 
   const [frameworkClick, setFremeworkClick] = useState(true);
   const [languageClick, setLanguageClick] = useState(true);
+  const [backendClick,setBackendClick]=useState(true);
   const [homeIndex, setHomeIndex] = useState(0);
   const [smpIndex, setSmpIndex] = useState(0);
   const [ecomIndex, setEcomIndex] = useState(0);
@@ -90,6 +93,8 @@ function App() {
   const [eduElement ,setEduAnimate]=useState(false);
 
   const mailRef = useRef(document.getElementById(''));
+
+  const ecomvideoRef=useRef(null);
 
   const [mailStatus, setMailStatus] = useState('');
   const [load,setLoad]=useState(false);
@@ -111,6 +116,7 @@ function App() {
 
     setLanguageClick(true);
     setFremeworkClick(true);
+    setBackendClick(true);
 
 
     console.log(softwareClick, event.target);
@@ -121,6 +127,10 @@ function App() {
     const languagedropdown = document.getElementById('languagedropdown');
     const softwareelement = document.getElementById('software');
     const softwaredropdown = document.getElementById('softwaredropdown');
+    const backenddropdowm = document.getElementById('backenddropdown');
+    const backend=document.getElementById('backend');
+    backenddropdowm.classList.remove('show-backend');
+    backend.classList.remove('active');
     languageElement.classList.remove('active');
     languagedropdown.classList.remove('show');
     framework.classList.remove('active');
@@ -149,6 +159,44 @@ function App() {
   }
 
 
+  const dropdownBackend = ()=>{
+
+    const softwareelement = document.getElementById('software');
+    const softwaredropdown = document.getElementById('softwaredropdown');
+    const languageElement = document.getElementById('language');
+    const languagedropdown = document.getElementById('languagedropdown');
+    const frameworkdropdowm = document.getElementById('frameworkdropdowm');
+    const backenddropdowm = document.getElementById('backenddropdown');
+    const backend=document.getElementById('backend');
+    frameworkdropdowm.classList.remove('show-framework');
+    
+    const framework = document.getElementById('framework');
+    framework.classList.remove('active');
+    softwaredropdown.classList.remove('show-software');
+  
+    softwareelement.classList.remove('active');
+    languageElement.classList.remove('active');
+    languagedropdown.classList.remove('show');
+    
+    setLanguageClick(true);
+    setSoftwareClick(true);
+    setFremeworkClick(true);
+
+    setBackendClick(!backendClick)
+    if (backendClick=== true) {
+      backend.classList.add('active');
+      backenddropdowm.classList.add('show-backend');
+
+
+    } else {
+      backend.classList.remove('active');
+      backenddropdowm.classList.remove('show-backend');
+
+    }
+
+
+  }
+
   const dropdownLanguage = () => {
 
     const frameworkdropdowm = document.getElementById('frameworkdropdowm');
@@ -160,12 +208,17 @@ function App() {
     const softwaredropdown = document.getElementById('softwaredropdown');
     const languageElement = document.getElementById('language');
     const languagedropdown = document.getElementById('languagedropdown');
+    const backenddropdowm = document.getElementById('backenddropdown');
+    const backend=document.getElementById('backend');
+    backenddropdowm.classList.remove('show-backend');
+    backend.classList.remove('active');
     softwaredropdown.classList.remove('show-software');
     softwareelement.classList.remove('active');
     framework.classList.remove('active');
     frameworkdropdowm.classList.remove('show-framework');
     setSoftwareClick(true)
     setFremeworkClick(true);
+    setBackendClick(true);
 
     setLanguageClick(!languageClick);
     if (languageClick === true) {
@@ -192,13 +245,20 @@ function App() {
     const languageElement = document.getElementById('language');
     const languagedropdown = document.getElementById('languagedropdown');
     const frameworkdropdowm = document.getElementById('frameworkdropdowm');
+    const backenddropdowm = document.getElementById('backenddropdown');
+    const backend=document.getElementById('backend');
+    backenddropdowm.classList.remove('show-backend');
+    backend.classList.remove('active');
     const framework = document.getElementById('framework');
     softwaredropdown.classList.remove('show-software');
+   
     softwareelement.classList.remove('active');
     languageElement.classList.remove('active');
     languagedropdown.classList.remove('show');
+    
     setLanguageClick(true);
     setSoftwareClick(true);
+    setBackendClick(true);
 
     setFremeworkClick(!frameworkClick)
     if (frameworkClick === true) {
@@ -349,7 +409,7 @@ function App() {
 
 
 
-    const url = 'https://api.sendinblue.com/v3/smtp/email';
+    const url = 'https://api.brevo.com/v3/smtp/email';
 
     const data = {
       sender: {
@@ -367,6 +427,7 @@ function App() {
       const response = await fetch(url, {
         method: 'POST',
         headers: {
+          'Accept': 'application/json',
           'Content-Type': 'application/json',
           'api-key': apiKey,
 
@@ -591,6 +652,13 @@ function App() {
 
   }, [])
 
+  useEffect(()=>{
+    ecomvideoRef && ecomvideoRef.current && ecomvideoRef.current.play().catch((err)=>{
+      console.log(err);
+    })
+
+  },[])
+
 
 
 
@@ -804,11 +872,7 @@ function App() {
                           <div className='dropdown-skill-container-language flex w-full h-full flex-wrap '>
                             <div className='m-auto  langauge-row-conatiner  flex mt-4'><img src={javaImage} className='-mt-3' alt="" width={'30px'} height={'30px'} /><h1 className='m-auto mt-1'>Java</h1></div>
                             <div className='m-auto  langauge-row-conatiner flex  w-fit mt-4'><img src={cppImage} alt="" width={'30px'} height={'30px'} /><h1 className='m-auto'> Cpp</h1></div>
-                            <div className='m-auto langauge-row-conatiner flex  w-fit mt-4'><img src={htmlImage} alt="" width={'30px'} height={'30px'} /><h1 className='m-auto'> Html</h1></div>
-                            <div className='m-auto langauge-row-conatiner flex  w-fit mt-4'><img src={cssImage} alt="" width={'30px'} height={'30px'} /><h1 className='m-auto'> CSS</h1></div>
-                            <div className='m-auto langauge-row-conatiner flex  w-fit mt-4'><img src={jsImage} alt="" width={'30px'} height={'30px'} /><h1 className='m-auto'> Javascript</h1></div>
-                            <div className='m-auto langauge-row-conatiner flex  w-fit mt-4'><img src={mongoImage} alt="" width={'30px'} height={'30px'} /><h1 className='m-auto'> MongoDb</h1></div>
-                            <div className='m-auto langauge-row-conatiner flex  w-fit mt-4'><img src={sqlImage} alt="" width={'30px'} height={'30px'} /><h1 className='m-auto'> MySql</h1></div>
+                                <div className='m-auto langauge-row-conatiner flex  w-fit mt-4'><img src={jsImage} alt="" width={'30px'} height={'30px'} /><h1 className='m-auto'> Javascript</h1></div>
                           </div>
                         </div>
 
@@ -817,7 +881,7 @@ function App() {
                         <div id="framework" className={`skill-row-content w-150 h-16 border flex border-white  fade-left-to-right ${skillElement?'animate':''} bg-gray-200 mt-1 mb-1 ml-2`}>
                           <div className='skill-row-text w-3/4 '>
                             <div className='text w-fit h-fit  px-4 py-5'>
-                              <h1>FRAMEWORKS</h1>
+                              <h1>FRONTEND</h1>
                             </div>
                           </div>
                           <div className='skill-dropdown-container  ml-4 w-52'>
@@ -829,12 +893,35 @@ function App() {
                         <div id='frameworkdropdowm' className="dropdown-framework-container sizeContaine ml-2 border border-gray-300">
                           <div id="dropdown-framework-container" className=' dropdown-skill-container-framework flex w-full h-full '>
                             <div className='flex w-full ml-3 m-auto '> <img src={reactImage} alt="" width={'35px'} height={'35px'} /> <h1 className=''>React</h1></div>
-                            <div className='flex w-full ml-3 m-auto'> <img src={expressImage} alt="" width={'35px'} height={'35px'} /> <h1 className='mt-1'>Express JS</h1></div>
+                             <div className='flex w-full ml-3 m-auto'> <img src={tailwindImage} alt="" width={'35px'} height={'35px'} /> <h1 className='mt-1'>Tailwind</h1></div>
+                             <div className='flex w-full ml-3 m-auto'><img src={htmlImage} alt="" width={'30px'} height={'30px'} /><h1 className=''> Html</h1></div>
+                            <div className='flex w-full ml-3 m-auto'><img src={cssImage} alt="" width={'30px'} height={'30px'} /><h1 className=''> CSS</h1></div>
+                       
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div id="backend" className={`skill-row-content w-150 h-16 border flex border-white  fade-left-to-right ${skillElement?'animate':''} bg-gray-200 mt-1 mb-1 ml-2`}>
+                          <div className='skill-row-text w-3/4 '>
+                            <div className='text w-fit h-fit  px-4 py-5'>
+                              <h1>BACKEND</h1>
+                            </div>
+                          </div>
+                          <div className='skill-dropdown-container  ml-4 w-52'>
+                            <div className='m-auto  w-1/2 py-3 mt-1 justify-center text-center'>
+                              <button className='button-drop-down' > <h3 className='hover:cursor-pointer '  ><i className={backendClick ? "fa fa-angle-down" : "fa fa-angle-up"} onClick={dropdownBackend} ></i></h3></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div id='backenddropdown' className="dropdown-framework-container sizeContaine ml-2 border border-gray-300">
+                          <div id="dropdown-framework-container" className=' dropdown-skill-container-framework flex w-full h-full '>
+                                <div className='flex w-full ml-3 m-auto'> <img src={expressImage} alt="" width={'35px'} height={'35px'} /> <h1 className='mt-1'>Express JS</h1></div>
                             <div className='flex w-full ml-3 m-auto'> <img src={nodeImage} alt="" width={'35px'} height={'35px'} /> <h1 className='mt-1'>Node JS</h1></div>
                             <div className='flex w-full ml-3 m-auto'> <img src={servImage} alt="" width={'35px'} height={'35px'} /> <h1 className='mt-1'>Servlet</h1></div>
                             <div className='flex w-full ml-3 m-auto'> <img src={jspImage} alt="" width={'35px'} height={'35px'} /> <h1 className='mt-1'>JSP</h1></div>
-                            <div className='flex w-full ml-3 m-auto'> <img src={tailwindImage} alt="" width={'35px'} height={'35px'} /> <h1 className='mt-1'>Tailwind</h1></div>
-
+                            <div className='flex w-full ml-3 m-auto'><img src={mongoImage} alt="" width={'30px'} height={'30px'} /><h1 className='mt-1'> MongoDb</h1></div>
+                            <div className='flex w-full ml-3 m-auto'><img src={sqlImage} alt="" width={'30px'} height={'30px'} /><h1 className='mt-1'> MySql</h1></div>
+                  
                           </div>
                         </div>
                       </div>
@@ -842,7 +929,7 @@ function App() {
                         <div id='software' className={`skill-row-content w-150 h-16 border flex border-white  fade-left-to-right ${skillElement?'animate':''}  bg-gray-200 mt-1 mb-1 ml-2`}>
                           <div className='skill-row-text w-3/4 '>
                             <div className='text w-fit h-fit  px-4 py-5'>
-                              <h1>SOFTWARE</h1>
+                              <h1>IDE</h1>
                             </div>
                           </div>
                           <div className='skill-dropdown-container  ml-4 w-52'>
@@ -859,6 +946,7 @@ function App() {
                           </div>
                         </div>
                       </div>
+
 
                     </div>
                   </section>
@@ -1003,6 +1091,13 @@ function App() {
             <div className='projectContainer w-full h-fit'>
               <div className='project-Images-container-ecom m-auto  shadow-lg w-full h-fit '>
                 <div className='ecom-project-images' alt="" style={{backgroundImage:`url(${backgroundImageEcom[ecomIndex]})`}} ></div>
+                {/* <div className='w-full h-full'>
+                  <video ref={ecomvideoRef} src={ecomvideo}  playsInline
+          loop
+          muted
+          controls
+          alt="All the devices"></video>
+                </div> */}
               </div>
               <div className='project-description-container w-full text-center justify-center h-fit px-4 py-4'>
                 <p> It is a web application  in which a user can check all the available products like laptop , moblies , watches ...etc . it can also view the information of the

@@ -116,6 +116,16 @@ content-visibility: auto;
 
 }
 
+.show-backend{
+  display: block;
+  visibility: visible;
+
+ width: 54rem;
+ height:60px;
+content-visibility: auto;
+
+}
+
 .show-framework{
   display: block;
   visibility: visible;
