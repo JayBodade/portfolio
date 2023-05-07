@@ -222,6 +222,9 @@ html{
   left: 16px;
   top:40%;
   color: white;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
 }
 
 @media  only screen and (min-width: 600px) and (max-width: 1024px){

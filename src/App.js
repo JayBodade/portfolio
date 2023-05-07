@@ -23,9 +23,9 @@ import ecommerceprojectImage from "./../src/Images/ecom1.png"
 import smpImage from "./../src/Images/AdminLogin.png"
 import chatImage from "./../src/Images/chat1.png"
 import inotebookImage from "./../src/Images/note1.png"
-import image1 from "./../src/Images/602575.png"
-import image2 from "./../src/Images/737474.png"
-import image3 from "./../src/Images/1033283.jpg"
+import image1 from "./../src/Images/774072.jpg"
+import image2 from "./../src/Images/wallpaperflare.com_wallpaper.jpg"
+import image3 from "./../src/Images/jane-palash-RnwLWujpHS4-unsplash.jpg"
 import tailwindImage from "./../src/Images/tailwind.jpg"
 import smpimage1 from "./../src/Images/AdminLogin.png"
 import smpimage2 from "./../src/Images/AddComplaint.png"
@@ -61,7 +61,7 @@ import note4 from "./../src/Images/note4.png"
 // import sampleImage1 from "./../src/Imag
 
 
-const backgroundImagesHome = [image1, image2, image3]
+const backgroundImagesHome = [image2, image1 ,image3]
 const backgroundImagesSMP = [smpimage1, smpimage2, smpimage3, smpimage4];
 const backgroundImageEcom = [ecomimage1, ecomimage2, ecomimage3, ecomimage4, ecomimage5, ecomimage6, ecomimage7];
 const backgroundImageChat = [chat1,chat2,chat3,chat4,chat5,chat7,chat8];
@@ -116,7 +116,7 @@ function App() {
     setBackendClick(true);
 
 
-    console.log(softwareClick, event.target);
+    // console.log(softwareClick, event.target);
 
     const frameworkdropdowm = document.getElementById('frameworkdropdowm');
     const framework = document.getElementById('framework');
@@ -357,7 +357,7 @@ function App() {
     const elementEcom = document.getElementById('project-extent-container-ecom');
     elementEcom.classList.remove('pop');
     element.classList.add('pop');
-    console.log(element.classList);
+    // console.log(element.classList);
   }
 
 
@@ -383,7 +383,7 @@ function App() {
 
 
   const closeMailPopup = () => {
-    console.log(mailRef);
+    // console.log(mailRef);
     if (mailRef) {
       mailRef.current.classList.add('hidden');
     }
@@ -401,8 +401,8 @@ function App() {
   const sendMail = async () => {
     const apiKey = process.env.REACT_APP_SENDINBLUE_API_KEY;
     const mail = process.env.REACT_APP_MAIL;
-    console.log(apiKey)
-    console.log(process.env)
+    // console.log(apiKey)
+    // console.log(process.env)
 
 
 
@@ -438,7 +438,7 @@ function App() {
 
       if (mailRef) {
         mailRef.current.classList.remove('hidden');
-        console.log(result)
+        // console.log(result)
         if (result.messageId) {
 
 
@@ -459,7 +459,7 @@ function App() {
 
 
     } catch (err) {
-      console.log(err)
+      // console.log(err)
     }
 
   }
@@ -474,7 +474,7 @@ function App() {
 
     const ele = document.getElementById('about');
     ele.classList.add('animate');
-    console.log('in about');
+    // console.log('in about');
 
   }
 
@@ -593,7 +593,7 @@ function App() {
     const interval = setInterval(() => {
 
       setHomeIndex(homeIndex => (homeIndex + 1) % backgroundImagesHome.length)
-    }, 5000)
+    }, 10000)
 
     return () => clearInterval(interval);
   }, [])
@@ -604,7 +604,7 @@ function App() {
 
       setSmpIndex(smpIndex => (smpIndex + 1) % backgroundImagesSMP.length)
 
-    }, 5000)
+    }, 10000)
 
     return () => clearInterval(interval);
 
@@ -652,7 +652,7 @@ function App() {
 
   useEffect(()=>{
     ecomvideoRef && ecomvideoRef.current && ecomvideoRef.current.play().catch((err)=>{
-      console.log(err);
+      // console.log(err);
     })
 
   },[])
@@ -712,9 +712,11 @@ function App() {
                     width: '101%', height: '100%', opacity: '0.87', backgroundImage: `url(${backgroundImagesHome[homeIndex]})`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: '100% 100%',
-
-                  }} ></div>
-                   <div className='heading-name-container  animate-on-scroll  -mt-14 w-100 h-fit   ' >
+                    backgroundPosition:'center',
+                    position:'relative'
+                  
+                  }} >
+                      <div className='heading-name-container  animate-on-scroll  -mt-12 w-100 h-fit   ' >
                     <div className="navigator" onClick={showMenu}>
 
                     </div>
@@ -737,6 +739,8 @@ function App() {
                       </div></button>
                     </div>
                   </div>
+                  </div>
+                 
                 </div>
                 <div className='right-side-second-container w-full h-fit  ' style={{ height: '780px' }}>
                   <section id='about'  className={`right-side-second-section fade-left-to-right ${animate ? 'animate' : ""}  mt-16 `}>
