@@ -20,6 +20,7 @@ import jspImage from "./../src/Images/jsp.jpg"
 import vsImage from "./../src/Images/vscode.jpg"
 import eclipseImage from "./../src/Images/eclipse.jpg"
 import ecommerceprojectImage from "./../src/Images/ecom1.png"
+import phpimage from "./../src/Images/php.jpg"
 import smpImage from "./../src/Images/AdminLogin.png"
 import chatImage from "./../src/Images/chat1.png"
 import inotebookImage from "./../src/Images/note1.png"
@@ -89,7 +90,7 @@ function App() {
   const [Message, setMessage] = useState();
   const [eduElement, setEduAnimate] = useState(false);
 
-  const [degreeClick,setDegreeClick] = useState(true);
+  
 
   const mailRef = useRef(document.getElementById(''));
 
@@ -932,13 +933,15 @@ function App() {
                           </div>
                         </div>
                         <div id='backenddropdown' className="dropdown-framework-container sizeContaine ml-2 border border-gray-300">
-                          <div id="dropdown-framework-container" className=' dropdown-skill-container-framework flex w-full h-full '>
+                          <div id="dropdown-framework-container" className=' dropdown-skill-container-framework flex   w-full h-full '>
                             <div className='flex w-full ml-3 m-auto'> <img src={expressImage} alt="" width={'35px'} height={'35px'} /> <h1 className='mt-1'>Express JS</h1></div>
                             <div className='flex w-full ml-3 m-auto'> <img src={nodeImage} alt="" width={'35px'} height={'35px'} /> <h1 className='mt-1'>Node JS</h1></div>
                             <div className='flex w-full ml-3 m-auto'> <img src={servImage} alt="" width={'35px'} height={'35px'} /> <h1 className='mt-1'>Servlet</h1></div>
                             <div className='flex w-full ml-3 m-auto'> <img src={jspImage} alt="" width={'35px'} height={'35px'} /> <h1 className='mt-1'>JSP</h1></div>
-                            <div className='flex w-full ml-3 m-auto'><img src={mongoImage} alt="" width={'30px'} height={'30px'} /><h1 className='mt-1'> MongoDb</h1></div>
+                            <div className='flex w-full ml-2 m-auto'><img src={mongoImage} alt="" width={'30px'} height={'30px'} /><h1 className='mt-1'> MongoDb</h1></div>
                             <div className='flex w-full ml-3 m-auto'><img src={sqlImage} alt="" width={'30px'} height={'30px'} /><h1 className='mt-1'> MySql</h1></div>
+                            <div className='flex w-full ml-3 m-auto'><img src={phpimage} alt="" width={'40px'} height={'30px'} /><h1 className='mt-1'> php</h1></div>
+                         
                           </div>
                         </div>
                       </div>
