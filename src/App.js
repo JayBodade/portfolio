@@ -113,27 +113,7 @@ function App() {
 
   }, []);
 
-  const handleDegreeClick = (event)=>{
 
-    const btechElement = document.getElementById('btech');
-    const btechDropdown = document.getElementById('btechDropdown');
-    setDegreeClick(!degreeClick);
-
-    if(degreeClick === true){
-      btechElement.classList.add('active');
-      // btechDropdown.classList.remove('sizeContaine');
-      btechDropdown.classList.add('show-btech-dropdown');
-    }
-    else
-    {
-      btechElement.classList.remove('active');
-      btechDropdown.classList.remove('show-btech-dropdown');
-      // btechDropdown.classList.add('sizeContaine');
-    }
-
-
-
-  }
 
   const dropdown = (event) => {
 
