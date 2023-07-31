@@ -86,17 +86,33 @@
  }
 
  @keyframes changeImage {
-  
- 
+
   50%{
     background-image: url("./Images/552426.jpg");
   }
   100%{
     background-image:url("./Images/737474.png");
   }
- 
-  
  }
+
+ .show-btech-dropdown{
+
+  display: block ;
+  visibility: visible ;
+ width: 54rem;
+ height:90px ;
+content-visibility: auto ;
+
+ }
+
+ .sizeContaine1{
+
+  visibility: hidden;
+  content-visibility: hidden;
+  height: 0px;
+  transition:  height 0.6s ;
+}
+
 .sizeContaine{
 
   visibility: hidden;
@@ -234,6 +250,29 @@ html{
    width: 200px;
     margin-left: 1%;
    
+
+  }
+  
+  .navcontainer{
+    /* border: 2px solid black; */
+    padding: 10px 10px;
+    /* height: 100px; */
+    z-index: 1;
+    box-shadow: 2px 2px 2px 2px black;
+    animation: zoom 0.8s;
+   
+  }
+
+  @keyframes zoom {
+
+   from {
+    height: 50%;
+   }
+   to{
+    height:100% ;
+   }
+
+    
   }
 
   .image-container{
@@ -242,6 +281,14 @@ html{
 
   }
 
+
+  .show-backend{
+    display: block;
+    visibility: visible;
+    width: 54rem;
+    height: 175px;
+    content-visibility: auto;
+  }
   .rightside-container{
     width: 560px;
     overflow-x: hidden;
@@ -317,8 +364,8 @@ html{
   .show{
     display: block;
     visibility: visible;
-   height:330px;
-  content-visibility: auto;
+    height: 72px;
+    content-visibility: auto;
    
   
   }
@@ -454,6 +501,35 @@ html{
     margin-left: -10%;
    
   }
+  
+  .navcontainer{
+    /* border: 2px solid black; */
+    padding: 10px 10px;
+    /* height: 100px; */
+    z-index: 1;
+    box-shadow: 2px 2px 2px 2px black;
+    
+    width: 288px;
+   
+  
+  animation: zoom 0.7s;
+  content-visibility: auto;
+   
+}
+
+@keyframes zoom {
+
+ from {
+  height: 10%;
+ }
+ to{
+  height:100% ;
+ }
+
+  
+}
+
+
   .navigator{
     background-image: url("./Images/Snapchat-1768599857.jpg");
     background-size: 100% 100%;
@@ -464,6 +540,18 @@ html{
     margin-left: 30px;
     margin-top: -63%;
 
+
+  }
+
+  .show-backend{
+
+    display: block;
+  visibility: visible;
+
+ width: 54rem;
+ height:360px;
+content-visibility: auto;
+ 
 
   }
 
@@ -582,7 +670,7 @@ html{
     flex-wrap: nowrap;
     width: 100%;
     margin-left: 10px;
-    height: auto;
+    /* height: auto; */
    }
 
    .mail-sent-pop-up{
@@ -599,7 +687,7 @@ html{
    .show{
     display: block;
     visibility: visible;
-   height:330px;
+   height:170px;
   content-visibility: auto;
    
   
@@ -868,6 +956,33 @@ html{
     margin-left: -10%;
    
   }
+
+  
+  .navcontainer{
+    /* border: 2px solid black; */
+    padding: 10px 10px;
+    /* height: 100px; */
+    z-index: 1;
+    box-shadow: 2px 2px 2px 2px black;
+    animation: zoom 0.7s;
+    content-visibility: auto;
+     
+  }
+  
+  @keyframes zoom {
+  
+   from {
+    height: 10%;
+   }
+   to{
+    height:100% ;
+   }
+  
+    
+  }
+
+
+
   .navigator{
     background-image: url("./Images/Snapchat-1768599857.jpg");
     background-size: 100% 100%;
@@ -999,7 +1114,7 @@ html{
     flex-wrap: nowrap;
     width: 100%;
     margin-left: 10px;
-    height: auto;
+    /* height: auto; */
    }
 
    .mail-sent-pop-up{
@@ -1012,11 +1127,21 @@ html{
     
    }
 
+   .show-backend{
 
-   .show{
     display: block;
     visibility: visible;
    height:330px;
+  content-visibility: auto;
+
+   }
+
+
+   
+   .show{
+    display: block;
+    visibility: visible;
+   height:170px;
   content-visibility: auto;
    
   
@@ -1285,6 +1410,32 @@ html{
     margin-left: -10%;
    
   }
+  
+  .navcontainer{
+    /* border: 2px solid black; */
+    padding: 10px 10px;
+    /* height: 100px; */
+    z-index: 1;
+    box-shadow: 2px 2px 2px 2px black;
+   animation: zoom 08s;
+    content-visibility: auto;
+     
+  }
+  
+  @keyframes zoom {
+  
+   from {
+    height: 10%;
+   }
+   to{
+    height:100% ;
+   }
+  
+    
+  }
+
+
+
   .navigator{
     background-image: url("./Images/Snapchat-1768599857.jpg");
     background-size: 100% 100%;
@@ -1713,6 +1864,29 @@ html{
   }
 
 
+  .navcontainer{
+    /* border: 2px solid black; */
+    padding: 10px 10px;
+    /* height: 100px; */
+    z-index: 1;
+    box-shadow: 2px 2px 2px 2px black;
+   animation: zoom 08s;
+    content-visibility: auto;
+     
+  }
+  
+  @keyframes zoom {
+  
+   from {
+    height: 10%;
+   }
+   to{
+    height:100% ;
+   }
+  
+    
+  }
+
   .navigator:hover{
     cursor: pointer;
   }
@@ -2113,6 +2287,30 @@ html{
     margin-left: -10%;
    
   }
+  
+  .navcontainer{
+    /* border: 2px solid black; */
+    padding: 10px 10px;
+    /* height: 100px; */
+    z-index: 1;
+    box-shadow: 2px 2px 2px 2px black;
+    animation: zoom 0.8s;
+    content-visibility: auto;
+     
+  }
+  
+  @keyframes zoom {
+  
+   from {
+    height: 10%;
+   }
+   to{
+    height:100% ;
+   }
+  
+    
+  }
+  
   .navigator{
     background-image: url("./Images/Snapchat-1768599857.jpg");
     background-size: 100% 100%;
@@ -2522,13 +2720,40 @@ html{
   
 }
 
-@media  only screen and (min-width:377px) and (max-width: 394px) {
+@media  only screen and (min-width:372px) and (max-width: 394px) {
   .leftside-container{
     display: none;
     width: 600px;
     margin-left: -10%;
    
   }
+
+  
+  .navcontainer{
+    /* border: 2px solid black; */
+    padding: 10px 10px;
+    /* height: 100px; */
+    z-index: 1;
+    box-shadow: 2px 2px 2px 2px black;
+   animation: 0.8s;
+    content-visibility: auto;
+     
+  }
+  
+  @keyframes zoom {
+  
+   from {
+    height: 10%;
+   }
+   to{
+    height:100% ;
+   }
+  
+    
+  }
+
+
+
   .navigator{
     background-image: url("./Images/Snapchat-1768599857.jpg");
     background-size: 100% 100%;
@@ -2660,7 +2885,7 @@ html{
     flex-wrap: nowrap;
     width: 100%;
     margin-left: 10px;
-    height: auto;
+    /* height: auto; */
    }
 
    .mail-sent-pop-up{
@@ -2676,10 +2901,19 @@ html{
    .show{
     display: block;
     visibility: visible;
-   height:330px;
+   height:170px;
   content-visibility: auto;
    
   
+  }
+
+  .show-backend{
+
+    display: block;
+    visibility: visible;
+   height:360px;
+  content-visibility: auto;
+
   }
 
 
@@ -2936,6 +3170,241 @@ html{
   
 }
 
+@media only screen and (max-width: 912px) {
+
+  .leftside-container{
+    
+    width: 200px;
+     margin-left: 1%;
+    
+   }
+ 
+   .image-container{
+    padding-left: 1px;
+    padding-right: 9px;
+ 
+   }
+ 
+   .rightside-container{
+    width: 100%;
+     overflow-x: hidden;
+     padding-right: 10px;
+   }
+ 
+   .rightside-first-container{
+     width: 100%;
+    
+    
+     overflow-x: hidden;
+   }
+ 
+   .right-side-second-container{
+     width: 79.6%;
+     /* border: 2px solid black; */
+     /* border: 2px solid black; */
+     height: 100% !important;
+ 
+   }
+ 
+   .right-side-second-section{
+     width: 100%;
+     height: fit-content;
+     
+   }
+ 
+ 
+   .home-image{
+     background-image: url("./Images/602575.png");
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   animation: changeImage  20s linear 4s  infinite  ;
+   }
+ 
+   .rigth-side-third-container{
+     width: 81.6%;
+     /* border: 2px solid black; */
+    
+ 
+   }
+ 
+   .rigth-side-education-section{
+     width: 100%;
+    
+   }
+ 
+   .education-row-content{
+     width: 97%;
+     font-size: 15.8px;
+     
+   }
+ 
+   .skill-row-content{
+     width: 97%;
+     font-size: 15.8px;
+ 
+   }
+ 
+   .button-drop-down{
+     margin-top: 3px;
+   }
+ 
+   .dropdown-languages-container{
+     width: 97%;
+     
+     
+   }
+ 
+   .dropdown-skill-container-language{
+     display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 10px;
+ 
+   }
+ 
+   .show{
+     display: block;
+     visibility: visible;
+    height:70px;
+   content-visibility: auto;
+    
+   
+   }
+ 
+   .dropdown-framework-container{
+ 
+     width: 97%;
+ 
+   }
+ 
+   .dropdown-skill-container-framework{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 10px;
+ 
+   }
+ 
+   .show-framework{
+    
+     visibility: visible;
+     height: 200px;
+     content-visibility: auto;
+   }
+ 
+   .dropdown-software-container{
+     width: 97%;
+ 
+ 
+   }
+
+   .show-backend{
+    display: block;
+    visibility: visible;
+    width: 54rem;
+    height: 175px;
+    content-visibility: auto;
+   }
+ 
+   .dropdown-skill-container-software{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 209px;
+ 
+   }
+ 
+   .show-software{
+     display: block;
+     visibility: visible;
+     height: 90px;
+     content-visibility: auto;
+ 
+   }
+ 
+   .project-container {
+   
+     width:80.8%;
+   
+   }
+ 
+   #project-extent-container-smp{
+    
+    margin-left: -26.5%;
+    width: 91%;
+    box-shadow: 2px 2px 18px 12px;
+    font-size: 20px;
+   }
+ 
+   .project-Images-container-smp{
+    
+     width: 93%;
+   }
+ 
+   #project-extent-container-ecom{
+    margin-left: -26.5%;
+    width: 91%;
+    box-shadow: 2px 2px 18px 12px;
+    font-size: 20px;
+ 
+ 
+   }
+ 
+   .project-Images-container-ecom{
+     width: 93%;
+ 
+   }
+ 
+   #project-extent-container-chat{
+    margin-left: -26.5%;
+    width: 91%;
+    box-shadow: 2px 2px 18px 12px;
+    font-size: 20px;
+ 
+   }
+ 
+   .project-Images-container-chat{
+     width: 93%;
+ 
+   }
+ 
+   #project-extent-container-note{
+    margin-left: -26.5%;
+    width: 91%;
+    box-shadow: 2px 2px 18px 12px;
+    font-size: 20px;
+ 
+ 
+   }
+ 
+   .project-Images-container-notes{
+     width: 93%;
+ 
+   }
+ 
+   .contact-container{
+   
+    width: 78.8%;
+   
+   }
+ 
+   .form-name-container{
+     width: 122%;
+     margin-left: -32px;
+ 
+   }
+ 
+   .form-submit-button{
+     width: 108%;
+   }
+ 
+   #mail-pop-up{
+    margin-left: -27% !important;
+    width: 80%;
+    font-size: 21px;
+   }
+
+  
+}
+
+
 
 @media only screen and (min-width:416px ) and (max-width: 520px) {
   .leftside-container{
@@ -2944,6 +3413,33 @@ html{
     margin-left: -10%;
    
   }
+
+  
+  .navcontainer{
+    /* border: 2px solid black; */
+    padding: 10px 10px;
+    /* height: 100px; */
+    z-index: 1;
+    box-shadow: 2px 2px 2px 2px black;
+   animation: zoom 0.8s;
+    content-visibility: auto;
+     
+  }
+  
+  @keyframes zoom {
+  
+   from {
+    height: 10%;
+   }
+   to{
+    height:100% ;
+   }
+  
+    
+  }
+
+
+
   .navigator{
     background-image: url("./Images/Snapchat-1768599857.jpg");
     background-size: 100% 100%;
@@ -2956,6 +3452,14 @@ html{
 
 
   }
+
+  .show-backend {
+    display: block;
+    visibility: visible;
+    width: 54rem;
+    height: 360px;
+    content-visibility: auto;
+}
 
 
   .navigator:hover{
@@ -2970,7 +3474,7 @@ html{
   .rightside-container{
     margin-left:0px;
     height: 20px;
-    width: 100%;
+    width: 120%;
     overflow-x: hidden;
   }
 
@@ -3356,7 +3860,50 @@ html{
     display: none;
     width: 600px;
     margin-left: -10%;
+
+
    
+  }
+
+  .navcontainer{
+    /* border: 2px solid black; */
+    padding: 10px 10px;
+    /* height: 100px; */
+    z-index: 1;
+    box-shadow: 2px 2px 2px 2px black;
+   animation: 0.8s;
+    content-visibility: auto;
+     
+  }
+  
+  @keyframes zoom {
+  
+   from {
+    height: 10%;
+   }
+   to{
+    height:100% ;
+   }
+  
+    
+  }
+  .nav-menu{
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    
+    display: block;
+    width: 130%;
+    /* position: absolute; */
+    /* border: 2px solid black; */
+    padding-left: 23px;
+  
+    top: 0;
+    opacity: 1;
+    font-size: 20px;
+  
+    z-index: -3;
+    transition: 0.3s;
   }
   .navigator{
     background-image: url("./Images/Snapchat-1768599857.jpg");
@@ -3486,7 +4033,7 @@ html{
     flex-wrap: nowrap;
     width: 100%;
     margin-left: 10px;
-    height: auto;
+    /* height: auto; */
    }
 
    .mail-sent-pop-up{
@@ -3499,11 +4046,20 @@ html{
     
    }
 
+   .show-backend{
+
+    display: block;
+    visibility: visible;
+   height:360px;
+  content-visibility: auto;
+   
+
+   }
 
    .show{
     display: block;
     visibility: visible;
-   height:330px;
+   height:170px;
   content-visibility: auto;
    
   
@@ -3784,6 +4340,38 @@ html{
 
   }
 
+  
+  .navcontainer{
+    /* border: 2px solid black; */
+    padding: 10px 10px;
+    /* height: 100px; */
+    z-index: 1;
+    box-shadow: 2px 2px 2px 2px black;
+   animation: zoom 0.8s;
+    content-visibility: auto;
+     
+  }
+  
+  @keyframes zoom {
+  
+   from {
+    height: 10%;
+   }
+   to{
+    height:100% ;
+   }
+  
+    
+  }
+
+  .show-backend {
+    display: block;
+    visibility: visible;
+    width: 54rem;
+    height: 360px;
+    content-visibility: auto;
+}
+
 
   .navigator:hover{
     cursor: pointer;
@@ -3899,7 +4487,7 @@ html{
     flex-wrap: nowrap;
     width: 100%;
     margin-left: 10px;
-    height: auto;
+    /* height: auto; */
    }
 
    .mail-sent-pop-up{
@@ -3916,7 +4504,7 @@ html{
    .show{
     display: block;
     visibility: visible;
-   height:330px;
+   height:160px;
   content-visibility: auto;
    
   
@@ -4271,7 +4859,7 @@ html{
    .show{
      display: block;
      visibility: visible;
-    height:330px;
+    height:70px;
    content-visibility: auto;
     
    
@@ -4301,6 +4889,14 @@ html{
      width: 97%;
  
  
+   }
+
+   .show-backend{
+    display: block;
+    visibility: visible;
+    width: 54rem;
+    height: 175px;
+    content-visibility: auto;
    }
  
    .dropdown-skill-container-software{
